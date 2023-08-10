@@ -1,0 +1,4 @@
+/home/quebec/Documents/faculdade/CG/Computacao_Grafica/build/CMakeFiles/MyQtProject.dir
+/home/quebec/Documents/faculdade/CG/Computacao_Grafica/build/CMakeFiles/edit_cache.dir
+/home/quebec/Documents/faculdade/CG/Computacao_Grafica/build/CMakeFiles/rebuild_cache.dir
+/home/quebec/Documents/faculdade/CG/Computacao_Grafica/build/CMakeFiles/MyQtProject_autogen.dir
