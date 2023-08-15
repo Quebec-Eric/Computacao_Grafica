@@ -5,30 +5,33 @@
 #include <QColorDialog>
 #include <QInputDialog>
 
+//Criar a pagina principal
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), currentColor(Qt::black), currentPenThickness(5) 
 {
     setFixedSize(800, 600);
-
+    //criar o local para desehar
     canvas = QPixmap(600, 600);
     canvas.fill(Qt::white);
+    
+    //criar botao X 
+    botaoX = new QLabel(this);
+    botaoX->setGeometry(620, 10, 160, 20);
 
-    xLabel = new QLabel(this);
-    xLabel->setGeometry(620, 10, 160, 20);
-
-    yLabel = new QLabel(this);
-    yLabel->setGeometry(620, 40, 160, 20);
+    //criar otao y
+    botaoY = new QLabel(this);
+    botaoY->setGeometry(620, 40, 160, 20);
 
     QPushButton *colorPickerButton = new QPushButton("Cor", this);
-    colorPickerButton->setGeometry(620, 70, 160, 30);
+    colorPickerButton->setGeometry(620, 460, 160, 30);
     connect(colorPickerButton, &QPushButton::clicked, this, &MainWindow::openColorPicker);
 
     QPushButton *adjustThicknessButton = new QPushButton("Mudar Tamanho", this);
-    adjustThicknessButton->setGeometry(620, 110, 160, 30);
+    adjustThicknessButton->setGeometry(620, 595, 160, 30);
     connect(adjustThicknessButton, &QPushButton::clicked, this, &MainWindow::adjustPenThickness);
 
     QPushButton *clearButton = new QPushButton("Clear", this);
-    clearButton->setGeometry(620, 150, 160, 30);
+    clearButton->setGeometry(620, 530, 160, 30);
     connect(clearButton, &QPushButton::clicked, this, &MainWindow::clearCanvas);
 }
 
@@ -45,8 +48,8 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 
 void MainWindow::mouseMoveEvent(QMouseEvent *event)
 {
-    xLabel->setText("X: " + QString::number(event->x()));
-    yLabel->setText("Y: " + QString::number(event->y()));
+    botaoX->setText("X: " + QString::number(event->x()));
+    botaoY->setText("Y: " + QString::number(event->y()));
 
     QPainter painter(&canvas);
     painter.setPen(QPen(currentColor, currentPenThickness));
@@ -86,9 +89,8 @@ void MainWindow::openColorPicker() {
 }
 
 void MainWindow::adjustPenThickness() {
-    // This is just a basic example. You may want a more sophisticated UI to adjust the thickness.
     bool ok;
-    int thickness = QInputDialog::getInt(this, "Adjust Thickness", "Enter pen thickness:", getCurrentPenThickness(), 1, 50, 1, &ok);
+    int thickness = QInputDialog::getInt(this, "Mudar o Tamanho do pincel", "Qual o tamanho:", getCurrentPenThickness(), 1, 50, 1, &ok);
     if (ok) {
         setCurrentPenThickness(thickness);
     }

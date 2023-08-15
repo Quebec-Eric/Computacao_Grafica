@@ -36,8 +36,8 @@ private:
     QColor currentColor;
     int currentPenThickness;
 
-    QLabel *xLabel;
-    QLabel *yLabel;
+    QLabel *botaoX;
+    QLabel *botaoY;
 };
 
 #endif // MAINWINDOW_H
