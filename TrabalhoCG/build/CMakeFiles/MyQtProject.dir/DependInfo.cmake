@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp" "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o" "gcc" "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o.d"
   "/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp" "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o" "gcc" "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o.d"
   "/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp" "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o" "gcc" "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o.d"
+  "/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp" "CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o" "gcc" "CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o.d"
   "/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/main.cpp" "CMakeFiles/MyQtProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyQtProject.dir/src/main.cpp.o.d"
   "/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp" "CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o.d"
   )

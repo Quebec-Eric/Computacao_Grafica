@@ -1,10 +1,8 @@
-CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp \
+CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o: \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp \
  /usr/include/stdc-predef.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeColor.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../mainwindow.h \
- /usr/include/qt/QtWidgets/QMainWindow \
- /usr/include/qt/QtWidgets/qmainwindow.h \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
+ /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt/QtGui/qtguiglobal.h /usr/include/qt/QtCore/qglobal.h \
  /usr/include/c++/13.2.1/type_traits \
@@ -242,30 +240,12 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: \
  /usr/include/qt/QtGui/qfontinfo.h \
  /usr/include/qt/QtWidgets/qsizepolicy.h /usr/include/qt/QtGui/qcursor.h \
  /usr/include/qt/QtGui/qkeysequence.h \
- /usr/include/qt/QtWidgets/qtabwidget.h /usr/include/qt/QtGui/qicon.h \
- /usr/include/qt/QtGui/QMouseEvent /usr/include/qt/QtGui/qevent.h \
- /usr/include/qt/QtCore/qcoreevent.h /usr/include/qt/QtCore/qvariant.h \
- /usr/include/qt/QtCore/qmap.h /usr/include/c++/13.2.1/variant \
- /usr/include/qt/QtCore/qset.h /usr/include/qt/QtCore/qurl.h \
- /usr/include/qt/QtCore/qfile.h /usr/include/qt/QtCore/qfiledevice.h \
- /usr/include/qt/QtGui/qvector2d.h /usr/include/qt/QtGui/qtouchdevice.h \
- /usr/include/qt/QtGui/QPainter /usr/include/qt/QtGui/qpainter.h \
- /usr/include/qt/QtGui/qtextoption.h /usr/include/qt/QtGui/qpen.h \
- /usr/include/qt/QtGui/QPixmap /usr/include/qt/QtGui/qpixmap.h \
  /usr/include/qt/QtWidgets/QPushButton \
  /usr/include/qt/QtWidgets/qpushbutton.h \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
- /usr/include/qt/QtWidgets/QLabel /usr/include/qt/QtWidgets/qlabel.h \
- /usr/include/qt/QtWidgets/qframe.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../TransformDialog.h \
- /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
- /usr/include/qt/QtWidgets/QVBoxLayout \
+ /usr/include/qt/QtGui/qicon.h /usr/include/qt/QtWidgets/QVBoxLayout \
  /usr/include/qt/QtWidgets/qboxlayout.h \
  /usr/include/qt/QtWidgets/qlayout.h \
  /usr/include/qt/QtWidgets/qlayoutitem.h \
  /usr/include/qt/QtWidgets/qboxlayout.h \
- /usr/include/qt/QtWidgets/qgridlayout.h \
- /usr/include/qt/QtWidgets/QColorDialog \
- /usr/include/qt/QtWidgets/qcolordialog.h \
- /usr/include/qt/QtWidgets/qdialog.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/../../include/mainwindow.h
+ /usr/include/qt/QtWidgets/qgridlayout.h

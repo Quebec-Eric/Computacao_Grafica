@@ -256,4 +256,12 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: \
  /usr/include/qt/QtWidgets/qpushbutton.h \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
  /usr/include/qt/QtWidgets/QLabel /usr/include/qt/QtWidgets/qlabel.h \
- /usr/include/qt/QtWidgets/qframe.h
+ /usr/include/qt/QtWidgets/qframe.h \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../TransformDialog.h \
+ /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
+ /usr/include/qt/QtWidgets/QVBoxLayout \
+ /usr/include/qt/QtWidgets/qboxlayout.h \
+ /usr/include/qt/QtWidgets/qlayout.h \
+ /usr/include/qt/QtWidgets/qlayoutitem.h \
+ /usr/include/qt/QtWidgets/qboxlayout.h \
+ /usr/include/qt/QtWidgets/qgridlayout.h

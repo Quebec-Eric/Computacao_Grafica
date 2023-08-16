@@ -227,6 +227,12 @@
 			null
 		],
 		[
+			"/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h",
+			"MU",
+			"6YEA5652QU/moc_TransformDialog.cpp",
+			null
+		],
+		[
 			"/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/mainwindow.h",
 			"MU",
 			"6YEA5652QU/moc_mainwindow.cpp",
@@ -297,6 +303,11 @@
 		],
 		[
 			"/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp",
 			"MU",
 			null
 		],

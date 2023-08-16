@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o.d"
   "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o"
   "CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o.d"
+  "CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o"
+  "CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o.d"
   "CMakeFiles/MyQtProject.dir/src/main.cpp.o"
   "CMakeFiles/MyQtProject.dir/src/main.cpp.o.d"
   "CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o"

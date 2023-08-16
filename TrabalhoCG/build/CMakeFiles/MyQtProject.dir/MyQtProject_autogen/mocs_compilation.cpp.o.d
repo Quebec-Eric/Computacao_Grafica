@@ -1,7 +1,7 @@
 CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
  /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp \
  /usr/include/c++/13.2.1/memory /usr/include/c++/13.2.1/bits/memoryfwd.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -101,9 +101,8 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13.2.1/backward/auto_ptr.h \
  /usr/include/c++/13.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/13.2.1/pstl/execution_defs.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/mainwindow.h \
- /usr/include/qt/QtWidgets/QMainWindow \
- /usr/include/qt/QtWidgets/qmainwindow.h \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h \
+ /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt/QtGui/qtguiglobal.h /usr/include/qt/QtCore/qglobal.h \
  /usr/include/c++/13.2.1/cstddef /usr/include/c++/13.2.1/utility \
@@ -240,18 +239,28 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt/QtGui/qfontinfo.h \
  /usr/include/qt/QtWidgets/qsizepolicy.h /usr/include/qt/QtGui/qcursor.h \
  /usr/include/qt/QtGui/qkeysequence.h \
- /usr/include/qt/QtWidgets/qtabwidget.h /usr/include/qt/QtGui/qicon.h \
- /usr/include/qt/QtGui/QMouseEvent /usr/include/qt/QtGui/qevent.h \
- /usr/include/qt/QtCore/qcoreevent.h /usr/include/qt/QtCore/qvariant.h \
- /usr/include/qt/QtCore/qmap.h /usr/include/c++/13.2.1/variant \
- /usr/include/qt/QtCore/qset.h /usr/include/qt/QtCore/qurl.h \
- /usr/include/qt/QtCore/qfile.h /usr/include/qt/QtCore/qfiledevice.h \
- /usr/include/qt/QtGui/qvector2d.h /usr/include/qt/QtGui/qtouchdevice.h \
- /usr/include/qt/QtGui/QPainter /usr/include/qt/QtGui/qpainter.h \
- /usr/include/qt/QtGui/qtextoption.h /usr/include/qt/QtGui/qpen.h \
- /usr/include/qt/QtGui/QPixmap /usr/include/qt/QtGui/qpixmap.h \
  /usr/include/qt/QtWidgets/QPushButton \
  /usr/include/qt/QtWidgets/qpushbutton.h \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
- /usr/include/qt/QtWidgets/QLabel /usr/include/qt/QtWidgets/qlabel.h \
- /usr/include/qt/QtWidgets/qframe.h
+ /usr/include/qt/QtGui/qicon.h /usr/include/qt/QtWidgets/QVBoxLayout \
+ /usr/include/qt/QtWidgets/qboxlayout.h \
+ /usr/include/qt/QtWidgets/qlayout.h \
+ /usr/include/qt/QtWidgets/qlayoutitem.h \
+ /usr/include/qt/QtWidgets/qboxlayout.h \
+ /usr/include/qt/QtWidgets/qgridlayout.h \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/mainwindow.h \
+ /usr/include/qt/QtWidgets/QMainWindow \
+ /usr/include/qt/QtWidgets/qmainwindow.h \
+ /usr/include/qt/QtWidgets/qtabwidget.h /usr/include/qt/QtGui/QMouseEvent \
+ /usr/include/qt/QtGui/qevent.h /usr/include/qt/QtCore/qcoreevent.h \
+ /usr/include/qt/QtCore/qvariant.h /usr/include/qt/QtCore/qmap.h \
+ /usr/include/c++/13.2.1/variant /usr/include/qt/QtCore/qset.h \
+ /usr/include/qt/QtCore/qurl.h /usr/include/qt/QtCore/qfile.h \
+ /usr/include/qt/QtCore/qfiledevice.h /usr/include/qt/QtGui/qvector2d.h \
+ /usr/include/qt/QtGui/qtouchdevice.h /usr/include/qt/QtGui/QPainter \
+ /usr/include/qt/QtGui/qpainter.h /usr/include/qt/QtGui/qtextoption.h \
+ /usr/include/qt/QtGui/qpen.h /usr/include/qt/QtGui/QPixmap \
+ /usr/include/qt/QtGui/qpixmap.h /usr/include/qt/QtWidgets/QLabel \
+ /usr/include/qt/QtWidgets/qlabel.h /usr/include/qt/QtWidgets/qframe.h \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h

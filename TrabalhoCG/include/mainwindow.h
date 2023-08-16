@@ -7,6 +7,7 @@
 #include <QPixmap>
 #include <QPushButton>
 #include <QLabel>
+#include "TransformDialog.h"
 
 class MainWindow : public QMainWindow
 {
@@ -30,6 +31,11 @@ protected:
 private slots:
     void openColorPicker();
     void adjustPenThickness();
+    void openTransformDialog();
+    void applyRotation();
+    void applyScale();
+    void applyTranslation();
+    void applyReflection();
 
 private:
     QPixmap canvas;
@@ -38,6 +44,7 @@ private:
 
     QLabel *botaoX;
     QLabel *botaoY;
+    QPushButton *graphButton;
 };
 
 #endif // MAINWINDOW_H

@@ -256,10 +256,19 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
  /usr/include/qt/QtWidgets/QLabel /usr/include/qt/QtWidgets/qlabel.h \
  /usr/include/qt/QtWidgets/qframe.h \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
+ /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
+ /usr/include/qt/QtWidgets/QVBoxLayout \
+ /usr/include/qt/QtWidgets/qboxlayout.h \
+ /usr/include/qt/QtWidgets/qlayout.h \
+ /usr/include/qt/QtWidgets/qlayoutitem.h \
+ /usr/include/qt/QtWidgets/qboxlayout.h \
+ /usr/include/qt/QtWidgets/qgridlayout.h \
  /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeColor.h \
  /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../mainwindow.h \
  /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeThickness.h \
  /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/clearCanvas.h \
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
  /usr/include/qt/QtWidgets/QColorDialog \
  /usr/include/qt/QtWidgets/qcolordialog.h \
  /usr/include/qt/QtWidgets/qdialog.h \

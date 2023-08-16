@@ -10,7 +10,7 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-
+# Incluindo todos os arquivos .cpp e .h das respectivas pastas
 file(GLOB PROJECT_SOURCES 
     ${CMAKE_SOURCE_DIR}/src/*.cpp
     ${CMAKE_SOURCE_DIR}/src/ModificacoesQuadro/*.cpp

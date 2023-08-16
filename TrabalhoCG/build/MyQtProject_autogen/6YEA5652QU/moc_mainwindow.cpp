@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[4];
-    char stringdata0[47];
+    QByteArrayData data[9];
+    char stringdata0[125];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,11 +35,18 @@ static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 15), // "openColorPicker"
 QT_MOC_LITERAL(2, 27, 0), // ""
-QT_MOC_LITERAL(3, 28, 18) // "adjustPenThickness"
+QT_MOC_LITERAL(3, 28, 18), // "adjustPenThickness"
+QT_MOC_LITERAL(4, 47, 19), // "openTransformDialog"
+QT_MOC_LITERAL(5, 67, 13), // "applyRotation"
+QT_MOC_LITERAL(6, 81, 10), // "applyScale"
+QT_MOC_LITERAL(7, 92, 16), // "applyTranslation"
+QT_MOC_LITERAL(8, 109, 15) // "applyReflection"
 
     },
     "MainWindow\0openColorPicker\0\0"
-    "adjustPenThickness"
+    "adjustPenThickness\0openTransformDialog\0"
+    "applyRotation\0applyScale\0applyTranslation\0"
+    "applyReflection"
 };
 #undef QT_MOC_LITERAL
 
@@ -49,7 +56,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -57,10 +64,20 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x08 /* Private */,
-       3,    0,   25,    2, 0x08 /* Private */,
+       1,    0,   49,    2, 0x08 /* Private */,
+       3,    0,   50,    2, 0x08 /* Private */,
+       4,    0,   51,    2, 0x08 /* Private */,
+       5,    0,   52,    2, 0x08 /* Private */,
+       6,    0,   53,    2, 0x08 /* Private */,
+       7,    0,   54,    2, 0x08 /* Private */,
+       8,    0,   55,    2, 0x08 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -75,6 +92,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->openColorPicker(); break;
         case 1: _t->adjustPenThickness(); break;
+        case 2: _t->openTransformDialog(); break;
+        case 3: _t->applyRotation(); break;
+        case 4: _t->applyScale(); break;
+        case 5: _t->applyTranslation(); break;
+        case 6: _t->applyReflection(); break;
         default: ;
         }
     }
@@ -110,13 +132,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 7)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 7;
     }
     return _id;
 }

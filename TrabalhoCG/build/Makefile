@@ -238,6 +238,30 @@ src/ModificacoesQuadro/clearCanvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyQtProject.dir/build.make CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.s
 .PHONY : src/ModificacoesQuadro/clearCanvas.cpp.s
 
+src/TransformDialog.o: src/TransformDialog.cpp.o
+.PHONY : src/TransformDialog.o
+
+# target to build an object file
+src/TransformDialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyQtProject.dir/build.make CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o
+.PHONY : src/TransformDialog.cpp.o
+
+src/TransformDialog.i: src/TransformDialog.cpp.i
+.PHONY : src/TransformDialog.i
+
+# target to preprocess a source file
+src/TransformDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyQtProject.dir/build.make CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.i
+.PHONY : src/TransformDialog.cpp.i
+
+src/TransformDialog.s: src/TransformDialog.cpp.s
+.PHONY : src/TransformDialog.s
+
+# target to generate assembly for a file
+src/TransformDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyQtProject.dir/build.make CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.s
+.PHONY : src/TransformDialog.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -308,6 +332,9 @@ help:
 	@echo "... src/ModificacoesQuadro/clearCanvas.o"
 	@echo "... src/ModificacoesQuadro/clearCanvas.i"
 	@echo "... src/ModificacoesQuadro/clearCanvas.s"
+	@echo "... src/TransformDialog.o"
+	@echo "... src/TransformDialog.i"
+	@echo "... src/TransformDialog.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
