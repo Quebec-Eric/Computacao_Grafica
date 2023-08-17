@@ -2418,6 +2418,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
+  /usr/include/qt/QtCore/QDebug \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/qt/QtCore/qatomic.h \
@@ -2430,8 +2431,10 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/qt/QtCore/qconfig.h \
   /usr/include/qt/QtCore/qcontainerfwd.h \
   /usr/include/qt/QtCore/qcontainertools_impl.h \
+  /usr/include/qt/QtCore/qcontiguouscache.h \
   /usr/include/qt/QtCore/qcoreevent.h \
   /usr/include/qt/QtCore/qdatastream.h \
+  /usr/include/qt/QtCore/qdebug.h \
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h \
   /usr/include/qt/QtCore/qflags.h \
@@ -2444,6 +2447,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/qt/QtCore/qiterator.h \
   /usr/include/qt/QtCore/qline.h \
   /usr/include/qt/QtCore/qlist.h \
+  /usr/include/qt/QtCore/qlocale.h \
   /usr/include/qt/QtCore/qlogging.h \
   /usr/include/qt/QtCore/qmap.h \
   /usr/include/qt/QtCore/qmargins.h \
@@ -2475,6 +2479,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/qt/QtCore/qsysinfo.h \
   /usr/include/qt/QtCore/qsystemdetection.h \
   /usr/include/qt/QtCore/qtcore-config.h \
+  /usr/include/qt/QtCore/qtextstream.h \
   /usr/include/qt/QtCore/qtypeinfo.h \
   /usr/include/qt/QtCore/qurl.h \
   /usr/include/qt/QtCore/qvariant.h \
@@ -2562,6 +2567,12 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 /usr/include/qt/QtWidgets/qinputdialog.h:
 
 /usr/include/qt/QtWidgets/QInputDialog:
+
+/usr/include/qt/QtCore/qtextstream.h:
+
+/usr/include/qt/QtCore/qdebug.h:
+
+/usr/include/qt/QtCore/qcontiguouscache.h:
 
 /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp:
 
@@ -3058,6 +3069,8 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 /usr/include/c++/13.2.1/string:
 
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/qt/QtCore/QDebug:
 
 /usr/include/qt/QtCore/qatomic.h:
 

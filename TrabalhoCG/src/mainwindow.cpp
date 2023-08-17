@@ -5,6 +5,8 @@
 #include "TransformDialog.h"
 #include <QColorDialog>
 #include <QInputDialog>
+#include <QDebug>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), currentColor(Qt::black), currentPenThickness(5) 
@@ -12,7 +14,11 @@ MainWindow::MainWindow(QWidget *parent)
     resize(800, 600);
     this->setStyleSheet("background-color: #2E2E2E;");
 
-    //criar o local para desehar
+    initializeUI();
+}
+
+
+void MainWindow::initializeUI() {
     canvas = QPixmap(600, 600);
     canvas.fill(Qt::white);
     
@@ -59,20 +65,107 @@ MainWindow::MainWindow(QWidget *parent)
     graphButton->setGeometry(620 + buttonWidth + buttonSpacing, 400 + buttonHeight + buttonSpacing, buttonWidth, buttonHeight);
     connect(graphButton, &QPushButton::clicked, this, &MainWindow::openTransformDialog);
 
-    // Se você tiver mais botões, continue o padrão acima, ajustando as coordenadas y para posicioná-los corretamente.
+
+    QPushButton *pointButton = new QPushButton("Pontos", this);
+    pointButton->setGeometry(620 + 2*(buttonWidth + buttonSpacing), 400, buttonWidth, buttonHeight);
+    connect(pointButton, &QPushButton::clicked, this, &MainWindow::setPointNumber);
+
+    drawLineButton = new QPushButton("Desenhar Reta", this);
+    drawLineButton->setGeometry(620 + 2*(buttonWidth + buttonSpacing), 400 + buttonHeight + buttonSpacing, buttonWidth, buttonHeight);
+    connect(drawLineButton, &QPushButton::clicked, this, &MainWindow::drawLine);
+    drawLineButton->hide();
+}
+
+void MainWindow::togglePointUI(bool show) {
+    qDebug() << "Dentro do togglePointUI";
+
+    if(!botaoX || !botaoY || !graphButton || !drawLineButton) {
+        qDebug() << "Algum widget não foi inicializado corretamente.";
+        return;
+    }
+
+    botaoX->setVisible(show);
+    botaoY->setVisible(show);
+    graphButton->setVisible(show);
+    drawLineButton->setVisible(show);
+
+    qDebug() << "Saindo do togglePointUI";
+}
+
+void MainWindow::setPointNumber() {
+    qDebug() << "Inicio setPointNumber";
+    bool ok;
+    int numPoints = QInputDialog::getInt(this, "Número de Pontos", "Quantos pontos você quer criar?", 1, 1, 50, 1, &ok);
+    if (ok) {
+        qDebug() << "Usuario pressionou OK";
+        numberOfPointsToCreate = numPoints;
+        pointsCreated = 0;
+        pointList.clear();
+
+        // Remove labels antigos (caso existam)
+        for (auto &label : pointXLabels) {
+            delete label;
+        }
+        for (auto &label : pointYLabels) {
+            delete label;
+        }
+        pointXLabels.clear();
+        pointYLabels.clear();
+
+        // Cria novos labels para os pontos
+        for (int i = 0; i < numPoints; i++) {
+            QLabel *xLabel = new QLabel(this);
+            QLabel *yLabel = new QLabel(this);
+            xLabel->hide();  // esconde até o ponto ser criado
+            yLabel->hide();
+            pointXLabels.push_back(xLabel);
+            pointYLabels.push_back(yLabel);
+        }
+
+        qDebug() << "Sobre para chamar togglePointUI";
+        togglePointUI(true);  // Mostra a UI de pontos
+        qDebug() << "Fim da chamada togglePointUI";
+    }
+    qDebug() << "Fim setPointNumber";
 }
 
 
-void MainWindow::mousePressEvent(QMouseEvent *event)
-{
-    if(event->button() == Qt::LeftButton)
-    {
-        QPainter painter(&canvas);
-        painter.setPen(QPen(currentColor, currentPenThickness));
-        painter.drawPoint(event->pos());
+
+
+void MainWindow::drawLine() {
+    QPainter painter(&canvas);
+    painter.setPen(QPen(currentColor, currentPenThickness));
+
+    for (int i = 0; i < pointList.size() - 1; i++) {
+        painter.drawLine(pointList[i], pointList[i + 1]);
+    }
+    update();
+    togglePointUI(false);  // Esconde a UI de pontos
+}
+
+void MainWindow::mousePressEvent(QMouseEvent *event) {
+    if(event->button() == Qt::LeftButton && pointsCreated < numberOfPointsToCreate) {
+        pointList.append(event->pos());
+        pointsCreated++;
+
+        QLabel *xLabel = pointXLabels[pointsCreated - 1];
+        QLabel *yLabel = pointYLabels[pointsCreated - 1];
+        xLabel->setText("X" + QString::number(pointsCreated) + ": " + QString::number(event->pos().x()));
+        yLabel->setText("Y" + QString::number(pointsCreated) + ": " + QString::number(event->pos().y()));
+
+        // Define a posição e mostra o label
+        xLabel->setGeometry(620, 70 + (pointsCreated - 1) * 30, 80, 20);
+        yLabel->setGeometry(700, 70 + (pointsCreated - 1) * 30, 80, 20);
+        xLabel->show();
+        yLabel->show();
+
+        if(pointsCreated == numberOfPointsToCreate) {
+            drawLineButton->show();  // Mostra o botão de desenhar linha quando todos os pontos foram criados
+        }
         update();
     }
 }
+
 
 void MainWindow::mouseMoveEvent(QMouseEvent *event)
 {
@@ -97,54 +190,57 @@ void MainWindow::openTransformDialog() {
 }
 
 void MainWindow::applyRotation() {
-    // Seu código para aplicar rotação ao desenho
-    // Para este exemplo, vou simplesmente rodar o canvas em 90 graus
-    QTransform transform;
-    transform.rotate(90);
-    canvas = canvas.transformed(transform);
+    // Criando uma QPixmap temporária para armazenar a imagem transformada
+    QPixmap tempPixmap(canvas.size());
+    tempPixmap.fill(Qt::transparent);  // preenche com transparente para garantir que não haja artefatos
+
+    QPainter painter(&tempPixmap);
+    painter.translate(canvas.width() / 2, canvas.height() / 2);  // movendo o ponto central da rotação para o centro da imagem
+    painter.rotate(90);
+    painter.translate(-canvas.width() / 2, -canvas.height() / 2);  // retornando ao canto superior esquerdo após a rotação
+    painter.drawPixmap(0, 0, canvas);
+
+    canvas = tempPixmap;  // Atualizando a imagem principal
     update();
 }
 
 void MainWindow::applyScale() {
-    // Seu código para aplicar escala ao desenho
-    // Exemplo: Aumentar o tamanho em 10%
-    QTransform transform;
-    transform.scale(1.1, 1.1);
+    QPixmap tempPixmap(canvas.size());
+    tempPixmap.fill(Qt::transparent);
 
-    // Crie um QPixmap temporário com a mesma dimensão do canvas original
-    QPixmap tempPixmap(600, 600);
-    tempPixmap.fill(Qt::white);  // Preenche com branco
-
-    // Desenha a imagem escalada no QPixmap temporário
     QPainter painter(&tempPixmap);
-    painter.setTransform(transform);
+    painter.translate(canvas.width() / 2, canvas.height() / 2);  
+    painter.scale(1.1, 1.1);
+    painter.translate(-canvas.width() / 2, -canvas.height() / 2);  
     painter.drawPixmap(0, 0, canvas);
 
-    // Atualize o canvas principal com a imagem escalada
     canvas = tempPixmap;
-
     update();
 }
 
-
 void MainWindow::applyTranslation() {
-    // Seu código para transladar o desenho
-    // Exemplo: Mover 10 pixels para a direita e 10 para baixo
-    QTransform transform;
-    transform.translate(10, 10);
-    canvas = canvas.transformed(transform);
+    QPixmap tempPixmap(canvas.size());
+    tempPixmap.fill(Qt::white); // Ou Qt::transparent, dependendo do que você quer
+
+    QPainter painter(&tempPixmap);
+    painter.drawPixmap(10, 10, canvas);  // desloca a imagem em 10 pixels para direita e para baixo
+
+    canvas = tempPixmap;
     update();
 }
 
 void MainWindow::applyReflection() {
-    // Seu código para refletir o desenho
-    // Exemplo: Refletir horizontalmente
-    QTransform transform;
-    transform.scale(-1, 1);
-    canvas = canvas.transformed(transform);
+    QPixmap tempPixmap(canvas.size());
+    tempPixmap.fill(Qt::transparent);
+
+    QPainter painter(&tempPixmap);
+    painter.translate(canvas.width(), 0);  // mover a imagem para a direita para refletir ao longo do eixo y
+    painter.scale(-1, 1);  // refletir a imagem ao longo do eixo y
+    painter.drawPixmap(0, 0, canvas);
+
+    canvas = tempPixmap;
     update();
 }
-
 
 void MainWindow::paintEvent(QPaintEvent *event)
 {
@@ -184,3 +280,4 @@ void MainWindow::adjustPenThickness() {
         setCurrentPenThickness(thickness);
     }
 }
+

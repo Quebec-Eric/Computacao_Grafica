@@ -23,11 +23,12 @@ public:
     void setCurrentPenThickness(int thickness);
 
     void clearCanvas();
+
 protected:
     void mousePressEvent(QMouseEvent *event) override;
     void mouseMoveEvent(QMouseEvent *event) override;
     void paintEvent(QPaintEvent *event) override;
-    
+
 private slots:
     void openColorPicker();
     void adjustPenThickness();
@@ -36,15 +37,27 @@ private slots:
     void applyScale();
     void applyTranslation();
     void applyReflection();
+    void setPointNumber();
+    void drawLine();
 
 private:
     QPixmap canvas;
     QColor currentColor;
     int currentPenThickness;
+    QList<QLabel*> pointXLabels;
+    QList<QLabel*> pointYLabels;
 
     QLabel *botaoX;
     QLabel *botaoY;
     QPushButton *graphButton;
+    QPushButton *drawLineButton;  // botão para desenhar a linha
+
+    int numberOfPointsToCreate;
+    int pointsCreated;
+    QVector<QPoint> pointList;
+
+    void initializeUI();  // Função para inicializar a interface
+    void togglePointUI(bool show);  // Função para alternar entre UIs
 };
 
 #endif // MAINWINDOW_H

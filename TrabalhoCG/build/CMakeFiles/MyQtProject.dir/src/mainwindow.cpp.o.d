@@ -275,4 +275,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
  /usr/include/qt/QtWidgets/QInputDialog \
  /usr/include/qt/QtWidgets/qinputdialog.h \
  /usr/include/qt/QtWidgets/qlineedit.h \
- /usr/include/qt/QtGui/qtextcursor.h /usr/include/qt/QtGui/qtextformat.h
+ /usr/include/qt/QtGui/qtextcursor.h /usr/include/qt/QtGui/qtextformat.h \
+ /usr/include/qt/QtCore/QDebug /usr/include/qt/QtCore/qdebug.h \
+ /usr/include/qt/QtCore/qtextstream.h /usr/include/qt/QtCore/qlocale.h \
+ /usr/include/qt/QtCore/qcontiguouscache.h
