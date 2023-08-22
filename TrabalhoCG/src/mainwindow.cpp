@@ -6,7 +6,10 @@
 #include <QColorDialog>
 #include <QInputDialog>
 #include <QDebug>
+#include <QtGlobal>
+#include <cstdlib>
 
+#include <cmath>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), currentColor(Qt::black), currentPenThickness(5) 
@@ -68,7 +71,7 @@ void MainWindow::initializeUI() {
 
     QPushButton *pointButton = new QPushButton("Pontos", this);
     pointButton->setGeometry(620 + 2*(buttonWidth + buttonSpacing), 400, buttonWidth, buttonHeight);
-    connect(pointButton, &QPushButton::clicked, this, &MainWindow::setPointNumber);
+    connect(pointButton, &QPushButton::clicked, this, &MainWindow::fazerBotoes);
 
     drawLineButton = new QPushButton("Desenhar Reta", this);
     drawLineButton->setGeometry(620 + 2*(buttonWidth + buttonSpacing), 400 + buttonHeight + buttonSpacing, buttonWidth, buttonHeight);
@@ -77,10 +80,10 @@ void MainWindow::initializeUI() {
 }
 
 void MainWindow::togglePointUI(bool show) {
-    qDebug() << "Dentro do togglePointUI";
+   
 
     if(!botaoX || !botaoY || !graphButton || !drawLineButton) {
-        qDebug() << "Algum widget não foi inicializado corretamente.";
+      
         return;
     }
 
@@ -89,20 +92,20 @@ void MainWindow::togglePointUI(bool show) {
     graphButton->setVisible(show);
     drawLineButton->setVisible(show);
 
-    qDebug() << "Saindo do togglePointUI";
+    
 }
 
-void MainWindow::setPointNumber() {
-    qDebug() << "Inicio setPointNumber";
+void MainWindow::fazerBotoes() {
+   
     bool ok;
     int numPoints = QInputDialog::getInt(this, "Número de Pontos", "Quantos pontos você quer criar?", 1, 1, 50, 1, &ok);
     if (ok) {
-        qDebug() << "Usuario pressionou OK";
+       
         numberOfPointsToCreate = numPoints;
         pointsCreated = 0;
         pointList.clear();
 
-        // Remove labels antigos (caso existam)
+        
         for (auto &label : pointXLabels) {
             delete label;
         }
@@ -112,36 +115,70 @@ void MainWindow::setPointNumber() {
         pointXLabels.clear();
         pointYLabels.clear();
 
-        // Cria novos labels para os pontos
+        
         for (int i = 0; i < numPoints; i++) {
             QLabel *xLabel = new QLabel(this);
             QLabel *yLabel = new QLabel(this);
-            xLabel->hide();  // esconde até o ponto ser criado
+            xLabel->hide();  
             yLabel->hide();
             pointXLabels.push_back(xLabel);
             pointYLabels.push_back(yLabel);
         }
 
-        qDebug() << "Sobre para chamar togglePointUI";
-        togglePointUI(true);  // Mostra a UI de pontos
-        qDebug() << "Fim da chamada togglePointUI";
+        togglePointUI(true);
+ 
     }
-    qDebug() << "Fim setPointNumber";
+
 }
 
 
 
 
 void MainWindow::drawLine() {
+    if (pointList.size() < 2) return;
+
+    // Use o DDA para conectar cada ponto da lista
+    for (int i = 0; i < pointList.size() - 1; i++) {
+        fazerDDA(pointList[i].x(), pointList[i].y(), pointList[i + 1].x(), pointList[i + 1].y());
+    }
+    update();
+    togglePointUI(false);
+}
+
+
+
+
+void MainWindow::fazerDDA(int Xinicio, int Xultimo, int Yinicio, int Y1ultimo){ 
     QPainter painter(&canvas);
     painter.setPen(QPen(currentColor, currentPenThickness));
 
-    for (int i = 0; i < pointList.size() - 1; i++) {
-        painter.drawLine(pointList[i], pointList[i + 1]);
+    int deltaX = Xultimo - Xinicio;
+    int deltaY = Y1ultimo - Yinicio;
+    float X = Xinicio;
+    float Y = Yinicio;
+
+    int quantidadeEtapas = abs(deltaX) > abs(deltaY) ? abs(deltaX) : abs(deltaY);
+    float Xant = deltaX / (float)quantidadeEtapas;
+    float Yant = deltaY / (float)quantidadeEtapas;
+
+    for (int i = 0; i <= quantidadeEtapas; i++) {
+        painter.drawPoint(std::round(X), std::round(Y)); 
+        X = X + Xant;
+        Y = Y + Yant;
     }
-    update();
-    togglePointUI(false);  // Esconde a UI de pontos
+
+    painter.end();
 }
+
+
+
+
+
+
+
+
+
+
 
 void MainWindow::mousePressEvent(QMouseEvent *event) {
     if(event->button() == Qt::LeftButton && pointsCreated < numberOfPointsToCreate) {
@@ -160,7 +197,7 @@ void MainWindow::mousePressEvent(QMouseEvent *event) {
         yLabel->show();
 
         if(pointsCreated == numberOfPointsToCreate) {
-            drawLineButton->show();  // Mostra o botão de desenhar linha quando todos os pontos foram criados
+            drawLineButton->show();  
         }
         update();
     }
@@ -181,30 +218,30 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
 void MainWindow::openTransformDialog() {
     TransformDialog dialog(this);
 
-    connect(&dialog, &TransformDialog::rotateRequested, this, &MainWindow::applyRotation);
-    connect(&dialog, &TransformDialog::scaleRequested, this, &MainWindow::applyScale);
-    connect(&dialog, &TransformDialog::translateRequested, this, &MainWindow::applyTranslation);
-    connect(&dialog, &TransformDialog::reflectRequested, this, &MainWindow::applyReflection);
+    connect(&dialog, &TransformDialog::rotateRequested, this, &MainWindow::fazerRotacao);
+    connect(&dialog, &TransformDialog::scaleRequested, this, &MainWindow::fazerScala);
+    connect(&dialog, &TransformDialog::translateRequested, this, &MainWindow::fazertrannsf);
+    connect(&dialog, &TransformDialog::reflectRequested, this, &MainWindow::fazerRefle);
 
     dialog.exec();
 }
 
-void MainWindow::applyRotation() {
-    // Criando uma QPixmap temporária para armazenar a imagem transformada
+void MainWindow::fazerRotacao() {
+
     QPixmap tempPixmap(canvas.size());
-    tempPixmap.fill(Qt::transparent);  // preenche com transparente para garantir que não haja artefatos
+    tempPixmap.fill(Qt::transparent);  
 
     QPainter painter(&tempPixmap);
-    painter.translate(canvas.width() / 2, canvas.height() / 2);  // movendo o ponto central da rotação para o centro da imagem
+    painter.translate(canvas.width() / 2, canvas.height() / 2);  
     painter.rotate(90);
-    painter.translate(-canvas.width() / 2, -canvas.height() / 2);  // retornando ao canto superior esquerdo após a rotação
+    painter.translate(-canvas.width() / 2, -canvas.height() / 2);  
     painter.drawPixmap(0, 0, canvas);
 
-    canvas = tempPixmap;  // Atualizando a imagem principal
+    canvas = tempPixmap;  
     update();
 }
 
-void MainWindow::applyScale() {
+void MainWindow::fazerScala() {
     QPixmap tempPixmap(canvas.size());
     tempPixmap.fill(Qt::transparent);
 
@@ -218,24 +255,24 @@ void MainWindow::applyScale() {
     update();
 }
 
-void MainWindow::applyTranslation() {
+void MainWindow::fazertrannsf() {
     QPixmap tempPixmap(canvas.size());
-    tempPixmap.fill(Qt::white); // Ou Qt::transparent, dependendo do que você quer
+    tempPixmap.fill(Qt::white); 
 
     QPainter painter(&tempPixmap);
-    painter.drawPixmap(10, 10, canvas);  // desloca a imagem em 10 pixels para direita e para baixo
+    painter.drawPixmap(10, 10, canvas); 
 
     canvas = tempPixmap;
     update();
 }
 
-void MainWindow::applyReflection() {
+void MainWindow::fazerRefle() {
     QPixmap tempPixmap(canvas.size());
     tempPixmap.fill(Qt::transparent);
 
     QPainter painter(&tempPixmap);
-    painter.translate(canvas.width(), 0);  // mover a imagem para a direita para refletir ao longo do eixo y
-    painter.scale(-1, 1);  // refletir a imagem ao longo do eixo y
+    painter.translate(canvas.width(), 0);  
+    painter.scale(-1, 1);  
     painter.drawPixmap(0, 0, canvas);
 
     canvas = tempPixmap;

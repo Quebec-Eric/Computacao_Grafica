@@ -263,4 +263,23 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt/QtGui/qpen.h /usr/include/qt/QtGui/QPixmap \
  /usr/include/qt/QtGui/qpixmap.h /usr/include/qt/QtWidgets/QLabel \
  /usr/include/qt/QtWidgets/qlabel.h /usr/include/qt/QtWidgets/qframe.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h
+ /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h \
+ /usr/include/c++/13.2.1/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/13.2.1/bits/specfun.h \
+ /usr/include/c++/13.2.1/tr1/gamma.tcc \
+ /usr/include/c++/13.2.1/tr1/special_function_util.h \
+ /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+ /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+ /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+ /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+ /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+ /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+ /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+ /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc

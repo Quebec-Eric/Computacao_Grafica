@@ -8,6 +8,7 @@
 #include <QPushButton>
 #include <QLabel>
 #include "TransformDialog.h"
+#include <cmath>
 
 class MainWindow : public QMainWindow
 {
@@ -29,17 +30,18 @@ protected:
     void mouseMoveEvent(QMouseEvent *event) override;
     void paintEvent(QPaintEvent *event) override;
 
+
 private slots:
     void openColorPicker();
     void adjustPenThickness();
     void openTransformDialog();
-    void applyRotation();
-    void applyScale();
-    void applyTranslation();
-    void applyReflection();
-    void setPointNumber();
+    void fazerRotacao();
+    void fazerScala();
+    void fazertrannsf();
+    void fazerRefle();
+    void fazerBotoes();
     void drawLine();
-
+    void fazerDDA(int x1, int y1, int x2, int y2);
 private:
     QPixmap canvas;
     QColor currentColor;
@@ -50,14 +52,14 @@ private:
     QLabel *botaoX;
     QLabel *botaoY;
     QPushButton *graphButton;
-    QPushButton *drawLineButton;  // botão para desenhar a linha
+    QPushButton *drawLineButton;  
 
     int numberOfPointsToCreate;
     int pointsCreated;
     QVector<QPoint> pointList;
 
-    void initializeUI();  // Função para inicializar a interface
-    void togglePointUI(bool show);  // Função para alternar entre UIs
+    void initializeUI();  
+    void togglePointUI(bool show); 
 };
 
 #endif // MAINWINDOW_H

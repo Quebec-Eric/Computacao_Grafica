@@ -141,6 +141,7 @@
  mdp:/usr/include/c++/13.2.1/bits/shared_ptr.h
  mdp:/usr/include/c++/13.2.1/bits/shared_ptr_atomic.h
  mdp:/usr/include/c++/13.2.1/bits/shared_ptr_base.h
+ mdp:/usr/include/c++/13.2.1/bits/specfun.h
  mdp:/usr/include/c++/13.2.1/bits/std_abs.h
  mdp:/usr/include/c++/13.2.1/bits/std_function.h
  mdp:/usr/include/c++/13.2.1/bits/std_mutex.h
@@ -179,6 +180,7 @@
  mdp:/usr/include/c++/13.2.1/cerrno
  mdp:/usr/include/c++/13.2.1/climits
  mdp:/usr/include/c++/13.2.1/clocale
+ mdp:/usr/include/c++/13.2.1/cmath
  mdp:/usr/include/c++/13.2.1/compare
  mdp:/usr/include/c++/13.2.1/concepts
  mdp:/usr/include/c++/13.2.1/cstddef
@@ -219,6 +221,18 @@
  mdp:/usr/include/c++/13.2.1/streambuf
  mdp:/usr/include/c++/13.2.1/string
  mdp:/usr/include/c++/13.2.1/string_view
+ mdp:/usr/include/c++/13.2.1/tr1/bessel_function.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/beta_function.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/ell_integral.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/exp_integral.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/gamma.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/hypergeometric.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/legendre_function.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/poly_hermite.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/poly_laguerre.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/riemann_zeta.tcc
+ mdp:/usr/include/c++/13.2.1/tr1/special_function_util.h
  mdp:/usr/include/c++/13.2.1/tuple
  mdp:/usr/include/c++/13.2.1/type_traits
  mdp:/usr/include/c++/13.2.1/typeinfo

@@ -19,10 +19,19 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
@@ -130,6 +139,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/bits/shared_ptr.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/13.2.1/bits/specfun.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
@@ -168,6 +178,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/chrono \
   /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cmath \
   /usr/include/c++/13.2.1/compare \
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdint \
@@ -207,6 +218,18 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/string \
   /usr/include/c++/13.2.1/string_view \
   /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/gamma.tcc \
+  /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13.2.1/tr1/special_function_util.h \
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
@@ -234,6 +257,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -386,10 +410,19 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
@@ -497,6 +530,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/shared_ptr.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/13.2.1/bits/specfun.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
@@ -535,6 +569,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/chrono \
   /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cmath \
   /usr/include/c++/13.2.1/compare \
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdint \
@@ -574,6 +609,18 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/string \
   /usr/include/c++/13.2.1/string_view \
   /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/gamma.tcc \
+  /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13.2.1/tr1/special_function_util.h \
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
@@ -601,6 +648,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -754,10 +802,19 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
@@ -865,6 +922,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/bits/shared_ptr.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/13.2.1/bits/specfun.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
@@ -903,6 +961,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/chrono \
   /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cmath \
   /usr/include/c++/13.2.1/compare \
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdint \
@@ -942,6 +1001,18 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/string \
   /usr/include/c++/13.2.1/string_view \
   /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/gamma.tcc \
+  /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13.2.1/tr1/special_function_util.h \
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
@@ -969,6 +1040,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -1120,10 +1192,19 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
@@ -1231,6 +1312,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/shared_ptr.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/13.2.1/bits/specfun.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
@@ -1269,6 +1351,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/chrono \
   /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cmath \
   /usr/include/c++/13.2.1/compare \
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdint \
@@ -1308,6 +1391,18 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/string \
   /usr/include/c++/13.2.1/string_view \
   /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/gamma.tcc \
+  /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13.2.1/tr1/special_function_util.h \
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
@@ -1335,6 +1430,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -1826,10 +1922,19 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documents/faculdade/CG/C
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
@@ -1937,6 +2042,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documents/faculdade/CG/C
   /usr/include/c++/13.2.1/bits/shared_ptr.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/13.2.1/bits/specfun.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
@@ -1975,6 +2081,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documents/faculdade/CG/C
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/chrono \
   /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cmath \
   /usr/include/c++/13.2.1/compare \
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdint \
@@ -2014,6 +2121,18 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documents/faculdade/CG/C
   /usr/include/c++/13.2.1/string \
   /usr/include/c++/13.2.1/string_view \
   /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/gamma.tcc \
+  /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13.2.1/tr1/special_function_util.h \
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
@@ -2041,6 +2160,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documents/faculdade/CG/C
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -2202,10 +2322,19 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
@@ -2313,6 +2442,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/c++/13.2.1/bits/shared_ptr.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/13.2.1/bits/specfun.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
@@ -2351,6 +2481,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/chrono \
   /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cmath \
   /usr/include/c++/13.2.1/compare \
   /usr/include/c++/13.2.1/cstddef \
   /usr/include/c++/13.2.1/cstdint \
@@ -2390,6 +2521,18 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/c++/13.2.1/string \
   /usr/include/c++/13.2.1/string_view \
   /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/13.2.1/tr1/gamma.tcc \
+  /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13.2.1/tr1/special_function_util.h \
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
@@ -2417,8 +2560,10 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/QDebug \
+  /usr/include/qt/QtCore/QtGlobal \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/qt/QtCore/qatomic.h \
@@ -2568,11 +2713,9 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/qt/QtWidgets/QInputDialog:
 
-/usr/include/qt/QtCore/qtextstream.h:
-
 /usr/include/qt/QtCore/qdebug.h:
 
-/usr/include/qt/QtCore/qcontiguouscache.h:
+/usr/include/qt/QtCore/QtGlobal:
 
 /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp:
 
@@ -2612,8 +2755,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/stdc-predef.h:
 
-/usr/include/sched.h:
-
 /usr/include/qt/QtWidgets/qwidget.h:
 
 /usr/include/qt/QtWidgets/qtwidgetsglobal.h:
@@ -2629,8 +2770,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 /usr/include/qt/QtWidgets/qlayout.h:
 
 /usr/include/qt/QtWidgets/qgridlayout.h:
-
-/usr/include/qt/QtWidgets/qdialog.h:
 
 /usr/include/qt/QtWidgets/qabstractbutton.h:
 
@@ -2682,8 +2821,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/qt/QtCore/qvector.h:
 
-/usr/include/qt/QtCore/qvarlengtharray.h:
-
 /usr/include/qt/QtCore/qlocale.h:
 
 /usr/include/sys/single_threaded.h:
@@ -2707,8 +2844,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 /usr/include/qt/QtCore/qsize.h:
 
 /usr/include/qt/QtCore/qshareddata.h:
-
-/usr/include/qt/QtCore/qset.h:
 
 /usr/include/qt/QtCore/qscopedpointer.h:
 
@@ -2748,15 +2883,45 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/qt/QtCore/qiterator.h:
 
-/usr/include/c++/13.2.1/bits/shared_ptr.h:
+/usr/include/qt/QtCore/qiodevice.h:
 
-/usr/include/bits/long-double.h:
+/usr/include/qt/QtCore/qhashfunctions.h:
 
-/usr/include/c++/13.2.1/bits/predefined_ops.h:
+/usr/include/qt/QtCore/qglobalstatic.h:
 
-/usr/include/c++/13.2.1/bits/postypes.h:
+/usr/include/qt/QtWidgets/qlabel.h:
 
-/usr/include/c++/13.2.1/bits/erase_if.h:
+/usr/include/qt/QtCore/qgenericatomic.h:
+
+/usr/include/qt/QtCore/qflags.h:
+
+/usr/include/qt/QtCore/qfile.h:
+
+/usr/include/qt/QtCore/qcoreevent.h:
+
+/usr/include/qt/QtCore/qcontainerfwd.h:
+
+/usr/include/qt/QtCore/qconfig.h:
+
+/usr/include/qt/QtCore/qbytearraylist.h:
+
+/usr/include/qt/QtCore/qbytearray.h:
+
+/usr/include/qt/QtCore/qbasicatomic.h:
+
+/usr/include/qt/QtCore/qatomic_cxx11.h:
+
+/usr/include/qt/QtCore/QDebug:
+
+/usr/include/qt/QtCore/qatomic.h:
+
+/usr/include/qt/QtCore/qarraydata.h:
+
+/usr/include/pthread.h:
+
+/usr/include/qt/QtCore/qchar.h:
+
+/usr/include/c++/13.2.1/bits/node_handle.h:
 
 /usr/include/c++/13.2.1/bits/nested_exception.h:
 
@@ -2768,17 +2933,17 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/c++/13.2.1/cstdio:
 
+/usr/include/c++/13.2.1/tr1/gamma.tcc:
+
 /usr/include/qt/QtCore/qline.h:
 
 /usr/include/bits/timesize.h:
 
 /usr/include/c++/13.2.1/bits/hashtable_policy.h:
 
+/usr/include/bits/fp-logb.h:
+
 /usr/include/asm-generic/errno.h:
-
-/usr/include/c++/13.2.1/bits/node_handle.h:
-
-/usr/include/qt/QtCore/qchar.h:
 
 /usr/include/c++/13.2.1/bits/functional_hash.h:
 
@@ -2796,15 +2961,21 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/bits/cpu-set.h:
 
-/usr/include/qt/QtCore/qcontainerfwd.h:
-
 /usr/include/c++/13.2.1/bits/cxxabi_forced.h:
+
+/usr/include/qt/QtCore/qhash.h:
+
+/usr/include/c++/13.2.1/bits/uses_allocator_args.h:
 
 /usr/include/qt/QtGui/QPainter:
 
 /usr/include/c++/13.2.1/bits/chrono.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/qt/QtWidgets/qdialog.h:
+
+/usr/include/c++/13.2.1/tr1/hypergeometric.tcc:
 
 /usr/include/qt/QtWidgets/qcolordialog.h:
 
@@ -2818,6 +2989,8 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/c++/13.2.1/bits/stl_iterator.h:
 
+/usr/include/c++/13.2.1/cmath:
+
 /usr/include/features-time64.h:
 
 /usr/include/c++/13.2.1/bits/atomic_base.h:
@@ -2825,8 +2998,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 /usr/include/c++/13.2.1/bits/align.h:
 
 /usr/include/c++/13.2.1/bit:
-
-/usr/include/c++/13.2.1/atomic:
 
 /usr/include/qt/QtGui/qpolygon.h:
 
@@ -2844,19 +3015,11 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/bits/xopen_lim.h:
 
-/usr/include/qt/QtWidgets/qlabel.h:
-
-/usr/include/qt/QtCore/qgenericatomic.h:
-
 /usr/include/bits/byteswap.h:
 
-/usr/include/c++/13.2.1/backward/auto_ptr.h:
+/usr/include/c++/13.2.1/bits/erase_if.h:
 
-/usr/include/c++/13.2.1/bits/utility.h:
-
-/usr/include/qt/QtCore/qpoint.h:
-
-/usr/include/c++/13.2.1/map:
+/usr/include/c++/13.2.1/bits/postypes.h:
 
 /usr/include/bits/types/wint_t.h:
 
@@ -2864,73 +3027,25 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/c++/13.2.1/list:
 
-/usr/include/bits/types/timer_t.h:
+/usr/include/c++/13.2.1/bits/predefined_ops.h:
 
 /usr/include/bits/types/struct_tm.h:
 
-/usr/include/qt/QtCore/qconfig.h:
+/usr/include/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/13.2.1/bits/algorithmfwd.h:
+/usr/include/bits/struct_rwlock.h:
 
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/qt/QtWidgets/qlineedit.h:
 
-/usr/include/qt/QtGui/qregion.h:
+/usr/include/qt/QtGui/qpainter.h:
 
-/usr/include/bits/pthread_stack_min-dynamic.h:
+/usr/include/bits/types/struct_FILE.h:
 
-/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+/usr/include/bits/types/mbstate_t.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/qt/QtGui/qtransform.h:
 
-/usr/include/limits.h:
-
-/usr/include/qt/QtGui/qpalette.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/qt/QtCore/qobject_impl.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/qt/QtWidgets/qboxlayout.h:
-
-/usr/include/c++/13.2.1/bits/memoryfwd.h:
-
-/usr/include/c++/13.2.1/bits/locale_classes.tcc:
-
-/usr/include/qt/QtCore/qbytearraylist.h:
-
-/usr/include/c++/13.2.1/bits/basic_string.tcc:
-
-/usr/include/bits/posix2_lim.h:
-
-/usr/include/c++/13.2.1/bits/new_allocator.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/c++/13.2.1/stdlib.h:
-
-/usr/include/c++/13.2.1/bits/unique_ptr.h:
-
-/usr/include/c++/13.2.1/bits/localefwd.h:
-
-/usr/include/c++/13.2.1/type_traits:
-
-/usr/include/c++/13.2.1/bits/range_access.h:
-
-/usr/include/qt/QtCore/qrect.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/c++/13.2.1/compare:
-
-/usr/include/bits/select.h:
-
-/usr/include/c++/13.2.1/bits/allocator.h:
+/usr/include/c++/13.2.1/bits/exception_defines.h:
 
 /usr/include/qt/QtWidgets/QDialog:
 
@@ -2938,33 +3053,9 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdad
 
 /usr/include/bits/types/locale_t.h:
 
-/usr/include/qt/QtGui/qtextcursor.h:
-
-/usr/include/c++/13.2.1/limits:
+/usr/include/c++/13.2.1/bits/allocator.h:
 
 /usr/include/bits/locale.h:
-
-/usr/include/qt/QtGui/qbrush.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/qt/QtCore/qcoreevent.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/c++/13.2.1/numeric:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/13.2.1/bits/cxxabi_init_exception.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-MyQtProject_autogen/mocs_compilation.cpp:
-
-/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h:
-
-/usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/c++/13.2.1/bits/stl_list.h:
 
@@ -2974,29 +3065,105 @@ MyQtProject_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13.2.1/string_view:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/bits/atomic_wide_counter.h:
 
-/usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h:
+/usr/include/qt/QtGui/qbrush.h:
 
-/usr/include/c++/13.2.1/bits/string_view.tcc:
+/usr/include/bits/libc-header-start.h:
 
-/usr/include/c++/13.2.1/debug/assertions.h:
+/usr/include/qt/QtCore/qset.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/c++/13.2.1/bits/shared_ptr.h:
+
+/usr/include/qt/QtCore/qvarlengtharray.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/qt/QtGui/qtgui-config.h:
+
+/usr/include/c++/13.2.1/algorithm:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/13.2.1/backward/auto_ptr.h:
+
+/usr/include/c++/13.2.1/bits/utility.h:
+
+/usr/include/qt/QtCore/qpoint.h:
+
+/usr/include/c++/13.2.1/map:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/13.2.1/numeric:
+
+/usr/include/bits/types/__locale_t.h:
+
+MyQtProject_autogen/mocs_compilation.cpp:
+
+/usr/include/c++/13.2.1/bits/allocated_ptr.h:
+
+/usr/include/bits/types.h:
+
+MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
+
+/usr/include/qt/QtCore/qsharedpointer_impl.h:
+
+/usr/include/c++/13.2.1/bits/list.tcc:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/c++/13.2.1/tuple:
+
+/usr/include/qt/QtCore/qtextstream.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/qt/QtWidgets/qboxlayout.h:
+
+/usr/include/c++/13.2.1/bits/memoryfwd.h:
+
+/usr/include/c++/13.2.1/bits/locale_classes.tcc:
+
+/usr/include/qt/QtCore/qobject_impl.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/qt/QtGui/qpalette.h:
+
+/usr/include/bits/timex.h:
+
+/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h:
+
+/usr/include/c++/13.2.1/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/limits.h:
+
+/usr/include/qt/QtGui/qregion.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/bits/floatn.h:
-
-MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
-
-/usr/include/c++/13.2.1/ext/string_conversions.h:
 
 /usr/include/qt/QtGui/qwindowdefs.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
 /usr/include/c++/13.2.1/cerrno:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/bits/struct_rwlock.h:
 
 /usr/include/c++/13.2.1/bits/move.h:
 
@@ -3008,21 +3175,19 @@ MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/13.2.1/bits/allocated_ptr.h:
+/usr/include/bits/types/__fpos_t.h:
 
-/usr/include/bits/types.h:
+/usr/include/bits/mathcalls.h:
 
-/usr/include/bits/endianness.h:
+/usr/include/bits/types/clock_t.h:
 
-/usr/include/c++/13.2.1/tuple:
+/usr/include/c++/13.2.1/bits/localefwd.h:
 
-MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
+/usr/include/c++/13.2.1/type_traits:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h:
 
 /usr/include/assert.h:
-
-/usr/include/qt/QtCore/qfile.h:
 
 /usr/include/c++/13.2.1/bits/basic_string.h:
 
@@ -3040,6 +3205,8 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/bits/uio_lim.h:
 
+/usr/include/bits/math-vector.h:
+
 /usr/include/c++/13.2.1/bits/functexcept.h:
 
 /usr/include/qt/QtCore/qnumeric.h:
@@ -3048,61 +3215,89 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/bits/stdlib-float.h:
 
-/usr/include/c++/13.2.1/bits/std_abs.h:
-
 /usr/include/c++/13.2.1/bits/vector.tcc:
 
 /usr/include/bits/struct_mutex.h:
 
 /usr/include/c++/13.2.1/ext/alloc_traits.h:
 
-/usr/include/bits/wchar.h:
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/qt/QtCore/qdatastream.h:
+
+/usr/include/c++/13.2.1/backward/binders.h:
+
+/usr/include/c++/13.2.1/bits/stl_multimap.h:
+
+/usr/include/c++/13.2.1/bits/charconv.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/c++/13.2.1/bits/stl_tree.h:
+
+/usr/include/c++/13.2.1/stdexcept:
+
+/usr/include/c++/13.2.1/bits/cxxabi_init_exception.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/c++/13.2.1/bits/basic_string.tcc:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/c++/13.2.1/bits/new_allocator.h:
+
+/usr/include/c++/13.2.1/tr1/bessel_function.tcc:
+
+MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
+
+/usr/include/c++/13.2.1/ext/string_conversions.h:
+
+/usr/include/qt/QtCore/qrect.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/13.2.1/bits/range_access.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/13.2.1/bits/string_view.tcc:
+
+/usr/include/c++/13.2.1/debug/assertions.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/13.2.1/debug/debug.h:
+
+/usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/13.2.1/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/13.2.1/compare:
+
+/usr/include/bits/select.h:
+
+/usr/include/qt/QtGui/qtextcursor.h:
+
+/usr/include/c++/13.2.1/limits:
 
 /usr/include/bits/waitstatus.h:
 
+/usr/include/bits/wchar.h:
+
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/c++/13.2.1/bits/refwrap.h:
+/usr/include/qt/QtCore/qcompilerdetection.h:
 
-/usr/include/c++/13.2.1/bits/ostream_insert.h:
-
-/usr/include/c++/13.2.1/string:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/qt/QtCore/QDebug:
-
-/usr/include/qt/QtCore/qatomic.h:
-
-/usr/include/qt/QtCore/qsharedpointer_impl.h:
-
-/usr/include/c++/13.2.1/bits/list.tcc:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/c++/13.2.1/bits/stl_numeric.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/c++/13.2.1/bits/parse_numbers.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/c++/13.2.1/bits/stl_relops.h:
-
-/usr/include/c++/13.2.1/pstl/execution_defs.h:
-
-/usr/include/qt/QtCore/qbytearray.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/c++/13.2.1/clocale:
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/bits/types/error_t.h:
 
@@ -3112,7 +3307,31 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/c++/13.2.1/typeinfo:
 
-/usr/include/bits/types/FILE.h:
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/13.2.1/bits/algorithmfwd.h:
+
+/usr/include/qt/QtGui/qcolor.h:
+
+/usr/include/qt/QtCore/qcontainertools_impl.h:
+
+/usr/include/c++/13.2.1/bits/ptr_traits.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/c++/13.2.1/bits/stl_numeric.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/13.2.1/bits/stl_relops.h:
+
+/usr/include/c++/13.2.1/pstl/execution_defs.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/13.2.1/clocale:
 
 /usr/include/bits/sched.h:
 
@@ -3122,25 +3341,29 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/bits/types/__FILE.h:
 
-/usr/include/qt/QtGui/qtgui-config.h:
-
-/usr/include/c++/13.2.1/algorithm:
-
 /usr/include/bits/local_lim.h:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
+/usr/include/c++/13.2.1/bits/ostream_insert.h:
 
-/usr/include/c++/13.2.1/debug/debug.h:
+/usr/include/c++/13.2.1/string:
 
-/usr/include/qt/QtGui/qtransform.h:
+/usr/include/bits/stdint-uintn.h:
 
-/usr/include/c++/13.2.1/bits/exception_defines.h:
+/usr/include/asm/errno.h:
 
-/usr/include/qt/QtWidgets/qlineedit.h:
+/usr/include/c++/13.2.1/bits/parse_numbers.h:
 
-/usr/include/qt/QtGui/qpainter.h:
+/usr/include/c++/13.2.1/bits/refwrap.h:
 
-/usr/include/bits/types/struct_FILE.h:
+/usr/include/qt/QtCore/qalgorithms.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/c++/13.2.1/bits/requires_hosted.h:
+
+/usr/include/c++/13.2.1/bits/unique_ptr.h:
+
+/usr/include/c++/13.2.1/stdlib.h:
 
 /usr/include/c++/13.2.1/bits/shared_ptr_atomic.h:
 
@@ -3148,13 +3371,15 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/c++/13.2.1/bits/shared_ptr_base.h:
 
+/usr/include/qt/QtCore/qcontiguouscache.h:
+
+/usr/include/c++/13.2.1/bits/specfun.h:
+
 /usr/include/wchar.h:
 
 /usr/include/bits/posix1_lim.h:
 
 /usr/include/c++/13.2.1/bits/std_function.h:
-
-/usr/include/qt/QtCore/qatomic_cxx11.h:
 
 /usr/include/c++/13.2.1/bits/stl_algo.h:
 
@@ -3166,9 +3391,17 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/c++/13.2.1/functional:
 
+/usr/include/c++/13.2.1/tr1/exp_integral.tcc:
+
 /usr/include/qt/QtGui/qtextformat.h:
 
 /usr/include/c++/13.2.1/bits/stl_construct.h:
+
+/usr/include/qt/QtCore/qglobal.h:
+
+/usr/include/c++/13.2.1/cstddef:
+
+/usr/include/c++/13.2.1/bits/stl_vector.h:
 
 /usr/include/c++/13.2.1/bits/stream_iterator.h:
 
@@ -3181,14 +3414,6 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 /usr/include/c++/13.2.1/bits/stl_map.h:
 
 /usr/include/c++/13.2.1/pstl/glue_memory_defs.h:
-
-/usr/include/c++/13.2.1/bits/charconv.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/c++/13.2.1/bits/stl_tree.h:
-
-/usr/include/c++/13.2.1/stdexcept:
 
 /usr/include/c++/13.2.1/bits/locale_classes.h:
 
@@ -3217,8 +3442,6 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 /usr/include/c++/13.2.1/cwchar:
 
 /usr/include/c++/13.2.1/exception:
-
-/usr/include/c++/13.2.1/ext/aligned_buffer.h:
 
 /usr/include/c++/13.2.1/ext/atomicity.h:
 
@@ -3260,6 +3483,24 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/c++/13.2.1/streambuf:
 
+/usr/include/c++/13.2.1/ext/aligned_buffer.h:
+
+/usr/include/c++/13.2.1/tr1/beta_function.tcc:
+
+/usr/include/c++/13.2.1/bits/std_abs.h:
+
+/usr/include/c++/13.2.1/tr1/ell_integral.tcc:
+
+/usr/include/c++/13.2.1/tr1/legendre_function.tcc:
+
+/usr/include/c++/13.2.1/tr1/poly_hermite.tcc:
+
+/usr/include/c++/13.2.1/tr1/special_function_util.h:
+
+/usr/include/qt/QtCore/qfiledevice.h:
+
+/usr/include/c++/13.2.1/unordered_map:
+
 /usr/include/c++/13.2.1/utility:
 
 /usr/include/c++/13.2.1/variant:
@@ -3300,52 +3541,6 @@ MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp:
 
 /usr/include/locale.h:
 
-/usr/include/pthread.h:
+/usr/include/c++/13.2.1/atomic:
 
-/usr/include/c++/13.2.1/bits/requires_hosted.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/qt/QtCore/qalgorithms.h:
-
-/usr/include/c++/13.2.1/bits/uses_allocator_args.h:
-
-/usr/include/qt/QtCore/qhash.h:
-
-/usr/include/qt/QtCore/qarraydata.h:
-
-/usr/include/qt/QtCore/qbasicatomic.h:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/qt/QtCore/qcompilerdetection.h:
-
-/usr/include/qt/QtGui/qcolor.h:
-
-/usr/include/c++/13.2.1/bits/ptr_traits.h:
-
-/usr/include/qt/QtCore/qcontainertools_impl.h:
-
-/usr/include/qt/QtCore/qflags.h:
-
-/usr/include/c++/13.2.1/backward/binders.h:
-
-/usr/include/c++/13.2.1/bits/stl_multimap.h:
-
-/usr/include/qt/QtCore/qdatastream.h:
-
-/usr/include/c++/13.2.1/unordered_map:
-
-/usr/include/qt/QtCore/qfiledevice.h:
-
-/usr/include/c++/13.2.1/cstddef:
-
-/usr/include/c++/13.2.1/bits/stl_vector.h:
-
-/usr/include/qt/QtCore/qglobal.h:
-
-/usr/include/qt/QtCore/qglobalstatic.h:
-
-/usr/include/qt/QtCore/qhashfunctions.h:
-
-/usr/include/qt/QtCore/qiodevice.h:
+/usr/include/math.h:
