@@ -42,7 +42,9 @@ private slots:
     void fazerRefle();
     void fazerBotoes();
     void drawLine();
+    void drawLineRR();
     void fazerDDA(int x1, int y1, int x2, int y2);
+    void fazerBresecham(int x1, int y1, int x2, int y2);
 private:
     QPixmap canvas;
     QColor currentColor;

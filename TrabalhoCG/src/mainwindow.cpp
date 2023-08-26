@@ -96,10 +96,10 @@ void MainWindow::showAlgorithmDialog() {
     QPushButton ok("Ok");
     connect(&ok, &QPushButton::clicked, [&] {
         if (bresenham.isChecked()) {
-            // Chame sua função para desenhar linha usando Bresenham
+            drawLineRR();
         }
         if (dda.isChecked()) {
-            drawLine();  // Seu método atual para desenhar linha
+            drawLine();  
         }
         dialog.accept();
     });
@@ -161,6 +161,17 @@ void MainWindow::fazerBotoes() {
 
 }
 
+void MainWindow::drawLineRR() {
+    if (pointList.size() < 2) return;
+
+    
+    for (int i = 0; i < pointList.size() - 1; i++) {
+        fazerBresecham(pointList[i].x(), pointList[i].y(), pointList[i + 1].x(), pointList[i + 1].y());
+    }
+    update();
+    togglePointUI(false);
+}
+
 
 
 
@@ -197,8 +208,69 @@ void MainWindow::fazerDDA(int x1, int y1, int x2, int y2) {
     painter.end();
 }
 
+void MainWindow::fazerBresecham(int x1, int y1, int x2, int y2) {
+    QPainter painter(&canvas);
+    painter.setPen(QPen(currentColor, currentPenThickness));
 
+    int encrementrarX = 0;
+    int encrementrarY = 0;
 
+    int deltaX = (x2 - x1);
+    int deltaY = (y2 - y1);
+
+    int constante1 = 0;
+    int constante2 = 0;
+    int p = 0;
+
+    if (deltaX >= 0) {
+        encrementrarX = 1;
+    } else {
+        encrementrarX = -1;
+        deltaX = -deltaX;
+    }
+
+    if (deltaY >= 0) {
+        encrementrarY = 1;
+    } else {
+        encrementrarY = -1;
+        deltaY = -deltaY;
+    }
+
+    int x = x1;
+    int y = y1;
+
+    painter.drawPoint(std::round(x), std::round(y));
+
+    if (deltaX >= deltaY) {
+        p = 2 * deltaY - deltaX;
+        constante1 = 2 * deltaY;
+        constante2 = 2 * (deltaY - deltaX);
+        for (int i = 0; i < deltaX; i++) {
+            x += encrementrarX;
+            if (p < 0) {
+                p += constante1;
+            } else {
+                y += encrementrarY;
+                p += constante2;
+            }
+            painter.drawPoint(std::round(x), std::round(y));
+        }
+    } else {
+        p = 2 * deltaX - deltaY;
+        constante1 = 2 * deltaX;
+        constante2 = 2 * (deltaX - deltaY);
+        for (int i = 0; i < deltaY; i++) {
+            y += encrementrarY;
+            if (p < 0) {
+                p += constante1;
+            } else {
+                x += encrementrarX;
+                p += constante2;
+            }
+            painter.drawPoint(std::round(x), std::round(y));
+        }
+    }
+}
 
 
 
