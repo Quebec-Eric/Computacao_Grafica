@@ -9,7 +9,6 @@
 #include <QtGlobal>
 #include <cstdlib>
 #include <QRadioButton>
-
 #include <cmath>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -89,9 +88,11 @@ void MainWindow::showAlgorithmDialog() {
 
     QRadioButton bresenham("Bresenham");
     QRadioButton dda("DDA");
+    QRadioButton circulo("Circulo");
 
     layout.addWidget(&bresenham);
     layout.addWidget(&dda);
+    layout.addWidget(&circulo);
 
     QPushButton ok("Ok");
     connect(&ok, &QPushButton::clicked, [&] {
@@ -100,6 +101,9 @@ void MainWindow::showAlgorithmDialog() {
         }
         if (dda.isChecked()) {
             drawLine();  
+        }
+        if(circulo.isChecked()){
+            drawCircle();
         }
         dialog.accept();
     });
@@ -166,7 +170,7 @@ void MainWindow::drawLineRR() {
 
     
     for (int i = 0; i < pointList.size() - 1; i++) {
-        fazerBresecham(pointList[i].x(), pointList[i].y(), pointList[i + 1].x(), pointList[i + 1].y());
+        fazerBres(pointList[i].x(), pointList[i].y(), pointList[i + 1].x(), pointList[i + 1].y());
     }
     update();
     togglePointUI(false);
@@ -182,6 +186,23 @@ void MainWindow::drawLine() {
     for (int i = 0; i < pointList.size() - 1; i++) {
         fazerDDA(pointList[i].x(), pointList[i].y(), pointList[i + 1].x(), pointList[i + 1].y());
     }
+    update();
+    togglePointUI(false);
+}
+
+
+void MainWindow::drawCircle() {
+    if (pointList.size() < 2) return;
+
+    int x1 = pointList[0].x();
+    int y1 = pointList[0].y();
+    int x2 = pointList[1].x();
+    int y2 = pointList[1].y();
+
+    int r = std::sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
+    
+    fazerCirculo(x1, y1, r);
+    
     update();
     togglePointUI(false);
 }
@@ -208,16 +229,14 @@ void MainWindow::fazerDDA(int x1, int y1, int x2, int y2) {
     painter.end();
 }
 
-void MainWindow::fazerBresecham(int x1, int y1, int x2, int y2) {
+void MainWindow::fazerBres(int x1, int y1, int x2, int y2) {
     QPainter painter(&canvas);
     painter.setPen(QPen(currentColor, currentPenThickness));
 
     int encrementrarX = 0;
     int encrementrarY = 0;
-
     int deltaX = (x2 - x1);
     int deltaY = (y2 - y1);
-
     int constante1 = 0;
     int constante2 = 0;
     int p = 0;
@@ -272,7 +291,39 @@ void MainWindow::fazerBresecham(int x1, int y1, int x2, int y2) {
     }
 }
 
+void MainWindow::fazerCirculo(int xc, int yc, int r) {
+    QPainter painter(&canvas);
+    painter.setPen(QPen(currentColor, currentPenThickness));
 
+    auto draw_circle = [&](int x, int y) {
+        painter.drawPoint(xc + x, yc + y);
+        painter.drawPoint(xc - x, yc + y);
+        painter.drawPoint(xc + x, yc - y);
+        painter.drawPoint(xc - x, yc - y);
+        painter.drawPoint(xc + y, yc + x);
+        painter.drawPoint(xc - y, yc + x);
+        painter.drawPoint(xc + y, yc - x);
+        painter.drawPoint(xc - y, yc - x);
+    };
+
+    int x = 0, y = r;
+    int d = 3 - 2 * r;
+    draw_circle(x, y);
+
+    while (y >= x) {
+        x++;
+
+        if (d > 0) {
+            y--;
+            d += 4 * (x - y) + 10;
+        } else {
+            d += 4 * x + 6;
+        }
+        draw_circle(x, y);
+    }
+
+    painter.end();
+}
 
 
 

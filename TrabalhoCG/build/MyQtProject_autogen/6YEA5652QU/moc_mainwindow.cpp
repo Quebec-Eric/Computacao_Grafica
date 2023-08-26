@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[19];
-    char stringdata0[203];
+    QByteArrayData data[24];
+    char stringdata0[230];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -43,22 +43,28 @@ QT_MOC_LITERAL(7, 91, 19), // "showAlgorithmDialog"
 QT_MOC_LITERAL(8, 111, 12), // "fazertrannsf"
 QT_MOC_LITERAL(9, 124, 10), // "fazerRefle"
 QT_MOC_LITERAL(10, 135, 11), // "fazerBotoes"
-QT_MOC_LITERAL(11, 147, 8), // "drawLine"
-QT_MOC_LITERAL(12, 156, 10), // "drawLineRR"
-QT_MOC_LITERAL(13, 167, 8), // "fazerDDA"
-QT_MOC_LITERAL(14, 176, 2), // "x1"
-QT_MOC_LITERAL(15, 179, 2), // "y1"
-QT_MOC_LITERAL(16, 182, 2), // "x2"
-QT_MOC_LITERAL(17, 185, 2), // "y2"
-QT_MOC_LITERAL(18, 188, 14) // "fazerBresecham"
+QT_MOC_LITERAL(11, 147, 10), // "drawCircle"
+QT_MOC_LITERAL(12, 158, 12), // "fazerCirculo"
+QT_MOC_LITERAL(13, 171, 2), // "xc"
+QT_MOC_LITERAL(14, 174, 2), // "yc"
+QT_MOC_LITERAL(15, 177, 1), // "r"
+QT_MOC_LITERAL(16, 179, 8), // "drawLine"
+QT_MOC_LITERAL(17, 188, 10), // "drawLineRR"
+QT_MOC_LITERAL(18, 199, 8), // "fazerDDA"
+QT_MOC_LITERAL(19, 208, 2), // "x1"
+QT_MOC_LITERAL(20, 211, 2), // "y1"
+QT_MOC_LITERAL(21, 214, 2), // "x2"
+QT_MOC_LITERAL(22, 217, 2), // "y2"
+QT_MOC_LITERAL(23, 220, 9) // "fazerBres"
 
     },
     "MainWindow\0openColorPicker\0\0"
     "adjustPenThickness\0openTransformDialog\0"
     "fazerRotacao\0fazerScala\0showAlgorithmDialog\0"
     "fazertrannsf\0fazerRefle\0fazerBotoes\0"
+    "drawCircle\0fazerCirculo\0xc\0yc\0r\0"
     "drawLine\0drawLineRR\0fazerDDA\0x1\0y1\0"
-    "x2\0y2\0fazerBresecham"
+    "x2\0y2\0fazerBres"
 };
 #undef QT_MOC_LITERAL
 
@@ -68,7 +74,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      15,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -76,19 +82,21 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   79,    2, 0x08 /* Private */,
-       3,    0,   80,    2, 0x08 /* Private */,
-       4,    0,   81,    2, 0x08 /* Private */,
-       5,    0,   82,    2, 0x08 /* Private */,
-       6,    0,   83,    2, 0x08 /* Private */,
-       7,    0,   84,    2, 0x08 /* Private */,
-       8,    0,   85,    2, 0x08 /* Private */,
-       9,    0,   86,    2, 0x08 /* Private */,
-      10,    0,   87,    2, 0x08 /* Private */,
-      11,    0,   88,    2, 0x08 /* Private */,
-      12,    0,   89,    2, 0x08 /* Private */,
-      13,    4,   90,    2, 0x08 /* Private */,
-      18,    4,   99,    2, 0x08 /* Private */,
+       1,    0,   89,    2, 0x08 /* Private */,
+       3,    0,   90,    2, 0x08 /* Private */,
+       4,    0,   91,    2, 0x08 /* Private */,
+       5,    0,   92,    2, 0x08 /* Private */,
+       6,    0,   93,    2, 0x08 /* Private */,
+       7,    0,   94,    2, 0x08 /* Private */,
+       8,    0,   95,    2, 0x08 /* Private */,
+       9,    0,   96,    2, 0x08 /* Private */,
+      10,    0,   97,    2, 0x08 /* Private */,
+      11,    0,   98,    2, 0x08 /* Private */,
+      12,    3,   99,    2, 0x08 /* Private */,
+      16,    0,  106,    2, 0x08 /* Private */,
+      17,    0,  107,    2, 0x08 /* Private */,
+      18,    4,  108,    2, 0x08 /* Private */,
+      23,    4,  117,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -101,9 +109,11 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int,   13,   14,   15,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,   14,   15,   16,   17,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,   14,   15,   16,   17,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,   19,   20,   21,   22,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,   19,   20,   21,   22,
 
        0        // eod
 };
@@ -123,10 +133,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->fazertrannsf(); break;
         case 7: _t->fazerRefle(); break;
         case 8: _t->fazerBotoes(); break;
-        case 9: _t->drawLine(); break;
-        case 10: _t->drawLineRR(); break;
-        case 11: _t->fazerDDA((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
-        case 12: _t->fazerBresecham((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
+        case 9: _t->drawCircle(); break;
+        case 10: _t->fazerCirculo((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 11: _t->drawLine(); break;
+        case 12: _t->drawLineRR(); break;
+        case 13: _t->fazerDDA((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
+        case 14: _t->fazerBres((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
         default: ;
         }
     }
@@ -161,13 +173,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 15;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 15)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 13;
+        _id -= 15;
     }
     return _id;
 }
