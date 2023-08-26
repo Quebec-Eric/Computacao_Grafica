@@ -1,7 +1,7 @@
 CMakeFiles/MyQtProject.dir/src/main.cpp.o: \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/main.cpp \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/mainwindow.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/mainwindow.h \
  /usr/include/qt/QtWidgets/QMainWindow \
  /usr/include/qt/QtWidgets/qmainwindow.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -256,7 +256,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
  /usr/include/qt/QtWidgets/QLabel /usr/include/qt/QtWidgets/qlabel.h \
  /usr/include/qt/QtWidgets/qframe.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
  /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
  /usr/include/qt/QtWidgets/QVBoxLayout \
  /usr/include/qt/QtWidgets/qboxlayout.h \

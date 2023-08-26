@@ -1,7 +1,7 @@
 CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp \
  /usr/include/stdc-predef.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/mainwindow.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/mainwindow.h \
  /usr/include/qt/QtWidgets/QMainWindow \
  /usr/include/qt/QtWidgets/qmainwindow.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -256,7 +256,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
  /usr/include/qt/QtWidgets/QLabel /usr/include/qt/QtWidgets/qlabel.h \
  /usr/include/qt/QtWidgets/qframe.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
  /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
  /usr/include/qt/QtWidgets/QVBoxLayout \
  /usr/include/qt/QtWidgets/qboxlayout.h \
@@ -283,11 +283,11 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeColor.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../mainwindow.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeThickness.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/clearCanvas.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeColor.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../mainwindow.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeThickness.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/clearCanvas.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
  /usr/include/qt/QtWidgets/QColorDialog \
  /usr/include/qt/QtWidgets/qcolordialog.h \
  /usr/include/qt/QtWidgets/qdialog.h \
@@ -298,4 +298,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
  /usr/include/qt/QtCore/QDebug /usr/include/qt/QtCore/qdebug.h \
  /usr/include/qt/QtCore/qtextstream.h /usr/include/qt/QtCore/qlocale.h \
  /usr/include/qt/QtCore/qcontiguouscache.h \
- /usr/include/qt/QtCore/QtGlobal /usr/include/qt/QtCore/qglobal.h
+ /usr/include/qt/QtCore/QtGlobal /usr/include/qt/QtCore/qglobal.h \
+ /usr/include/qt/QtWidgets/QRadioButton \
+ /usr/include/qt/QtWidgets/qradiobutton.h

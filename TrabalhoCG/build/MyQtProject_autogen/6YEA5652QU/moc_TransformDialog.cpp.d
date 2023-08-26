@@ -1,5 +1,5 @@
-/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp: /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
-  /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/moc_predefs.h \
+/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp: /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
+  /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/moc_predefs.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \

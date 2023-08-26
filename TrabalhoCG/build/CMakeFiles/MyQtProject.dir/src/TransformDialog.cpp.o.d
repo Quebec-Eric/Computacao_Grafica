@@ -1,7 +1,7 @@
 CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o: \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp \
  /usr/include/stdc-predef.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/TransformDialog.h \
  /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt/QtGui/qtguiglobal.h /usr/include/qt/QtCore/qglobal.h \

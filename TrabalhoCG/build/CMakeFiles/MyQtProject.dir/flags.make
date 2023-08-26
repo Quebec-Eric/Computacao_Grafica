@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/include -I/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
+CXX_INCLUDES = -I/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/include -I/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
 
 CXX_FLAGS = -std=gnu++17 -fPIC
 

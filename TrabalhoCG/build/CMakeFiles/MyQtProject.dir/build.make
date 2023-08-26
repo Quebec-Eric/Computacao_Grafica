@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG
+CMAKE_SOURCE_DIR = /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build
+CMAKE_BINARY_DIR = /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MyQtProject.dir/depend.make
@@ -72,100 +72,100 @@ include CMakeFiles/MyQtProject.dir/flags.make
 CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: CMakeFiles/MyQtProject.dir/flags.make
 CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProject_autogen/mocs_compilation.cpp
 CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: CMakeFiles/MyQtProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o -MF CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o -c /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o -MF CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o -c /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp
 
 CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp > CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp > CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp -o CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp -o CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: CMakeFiles/MyQtProject.dir/flags.make
-CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp
+CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: CMakeFiles/MyQtProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o -MF CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o -c /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o -MF CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o -c /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp > CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp > CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.i
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeColor.cpp -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.s
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: CMakeFiles/MyQtProject.dir/flags.make
-CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp
+CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: CMakeFiles/MyQtProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o -MF CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o -c /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o -MF CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o -c /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp > CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp > CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.i
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/changeThickness.cpp -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.s
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: CMakeFiles/MyQtProject.dir/flags.make
-CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp
+CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: CMakeFiles/MyQtProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o -MF CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o -c /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o -MF CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o -c /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp > CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp > CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.i
 
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp -o CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.s
 
 CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o: CMakeFiles/MyQtProject.dir/flags.make
-CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o: /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp
+CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o: /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp
 CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o: CMakeFiles/MyQtProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o -MF CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o -c /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o -MF CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.o -c /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp
 
 CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp > CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp > CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.i
 
 CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp -o CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/TransformDialog.cpp -o CMakeFiles/MyQtProject.dir/src/TransformDialog.cpp.s
 
 CMakeFiles/MyQtProject.dir/src/main.cpp.o: CMakeFiles/MyQtProject.dir/flags.make
-CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/main.cpp
+CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/main.cpp
 CMakeFiles/MyQtProject.dir/src/main.cpp.o: CMakeFiles/MyQtProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyQtProject.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/main.cpp.o -MF CMakeFiles/MyQtProject.dir/src/main.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/main.cpp.o -c /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyQtProject.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/main.cpp.o -MF CMakeFiles/MyQtProject.dir/src/main.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/main.cpp.o -c /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/main.cpp
 
 CMakeFiles/MyQtProject.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyQtProject.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/main.cpp > CMakeFiles/MyQtProject.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/main.cpp > CMakeFiles/MyQtProject.dir/src/main.cpp.i
 
 CMakeFiles/MyQtProject.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyQtProject.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/main.cpp -o CMakeFiles/MyQtProject.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/main.cpp -o CMakeFiles/MyQtProject.dir/src/main.cpp.s
 
 CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: CMakeFiles/MyQtProject.dir/flags.make
-CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp
+CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp
 CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: CMakeFiles/MyQtProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o -MF CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o -c /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o -MF CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o.d -o CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o -c /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp
 
 CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp > CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp > CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.i
 
 CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp -o CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/mainwindow.cpp -o CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.s
 
 # Object files for target MyQtProject
 MyQtProject_OBJECTS = \
@@ -192,7 +192,7 @@ MyQtProject: /usr/lib/libQt5Widgets.so.5.15.10
 MyQtProject: /usr/lib/libQt5Gui.so.5.15.10
 MyQtProject: /usr/lib/libQt5Core.so.5.15.10
 MyQtProject: CMakeFiles/MyQtProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable MyQtProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable MyQtProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyQtProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -204,6 +204,6 @@ CMakeFiles/MyQtProject.dir/clean:
 .PHONY : CMakeFiles/MyQtProject.dir/clean
 
 CMakeFiles/MyQtProject.dir/depend:
-	cd /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MyQtProject.dir/depend
 

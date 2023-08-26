@@ -1,7 +1,7 @@
 CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_TransformDialog.cpp \
  /usr/include/c++/13.2.1/memory /usr/include/c++/13.2.1/bits/memoryfwd.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -101,7 +101,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13.2.1/backward/auto_ptr.h \
  /usr/include/c++/13.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/13.2.1/pstl/execution_defs.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h \
  /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt/QtGui/qtguiglobal.h /usr/include/qt/QtCore/qglobal.h \
@@ -248,8 +248,8 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt/QtWidgets/qlayoutitem.h \
  /usr/include/qt/QtWidgets/qboxlayout.h \
  /usr/include/qt/QtWidgets/qgridlayout.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/mainwindow.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/mainwindow.h \
  /usr/include/qt/QtWidgets/QMainWindow \
  /usr/include/qt/QtWidgets/qmainwindow.h \
  /usr/include/qt/QtWidgets/qtabwidget.h /usr/include/qt/QtGui/QMouseEvent \
@@ -263,7 +263,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt/QtGui/qpen.h /usr/include/qt/QtGui/QPixmap \
  /usr/include/qt/QtGui/qpixmap.h /usr/include/qt/QtWidgets/QLabel \
  /usr/include/qt/QtWidgets/qlabel.h /usr/include/qt/QtWidgets/qframe.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/MyQtProject_autogen/6YEA5652QU/../../../include/TransformDialog.h \
  /usr/include/c++/13.2.1/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \

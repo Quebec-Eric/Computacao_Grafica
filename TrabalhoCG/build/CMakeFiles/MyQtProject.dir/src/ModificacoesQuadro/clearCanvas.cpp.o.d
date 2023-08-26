@@ -1,8 +1,8 @@
 CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/src/ModificacoesQuadro/clearCanvas.cpp \
  /usr/include/stdc-predef.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/clearCanvas.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../mainwindow.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/clearCanvas.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../mainwindow.h \
  /usr/include/qt/QtWidgets/QMainWindow \
  /usr/include/qt/QtWidgets/qmainwindow.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
@@ -257,7 +257,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
  /usr/include/qt/QtWidgets/QLabel /usr/include/qt/QtWidgets/qlabel.h \
  /usr/include/qt/QtWidgets/qframe.h \
- /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../TransformDialog.h \
+ /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../TransformDialog.h \
  /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h \
  /usr/include/qt/QtWidgets/QVBoxLayout \
  /usr/include/qt/QtWidgets/qboxlayout.h \

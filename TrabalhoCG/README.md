@@ -1,7 +1,38 @@
-# Computacao_Grafica
-Computacao Graf
+Esta aplicação é um projeto de desenho e transformação de gráficos feito em QT. O programa permite que o usuário desenhe pontos e linhas no canvas, além de aplicar várias transformações geométricas.
 
-Para funcionar o programa voce tem que baixar qt em todo seu escopo, alem disso make e gcc
-depois disso se quiser voce so precisa utilizar o make dentro do build, depois executar o executavel (./MyQtProject)
 
-Quando o programa iniciar , voce pode desenhar na parte branca e ira apareccer no canto esquerdo a posicao X e Y , e fazer a tranformacao em si , depois disso , voce ponnde clicar em ponntos que ao clicar e so selecionar os pontos e fazer a linha com as uncoes prontas.
+Funcionalidades
+Seleção de Cor: Botão "Cor" permite ao usuário escolher a cor da linha.
+
+Ajuste de Espessura: Botão "Tamanho" para ajustar a espessura do pincel.
+
+Limpar Tela: Botão "Clear" para limpar o canvas.
+
+Transformações: Botão "Gráfico" para abrir um diálogo de transformações.
+
+Pontos: Botão "Pontos" para definir o número de pontos a serem criados.
+
+Desenhar Reta: Botão "Desenhar Reta" para escolher o algoritmo para desenhar a linha (Bresenham ou DDA).
+
+Posição do Mouse: Exibe as coordenadas atuais do mouse no canvas.
+
+
+Requisitos
+C++11 ou superior
+QT5 ou superior
+
+sudo apt-get install qt5-default
+git clone https://github.com/Quebec-Eric/Computacao_Grafica.git
+cd TRABALHOCG
+cd build 
+cd make || ./MyQtProject
+
+
+
+Desenvolvido com
+C++
+QT5
+
+
+
+Eric Azevedo de Oliveira

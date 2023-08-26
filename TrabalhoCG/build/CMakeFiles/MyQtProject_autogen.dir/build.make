@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG
+CMAKE_SOURCE_DIR = /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build
+CMAKE_BINARY_DIR = /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build
 
 # Utility rule file for MyQtProject_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/MyQtProject_autogen.dir/compiler_depend.make
 include CMakeFiles/MyQtProject_autogen.dir/progress.make
 
 CMakeFiles/MyQtProject_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyQtProject"
-	/usr/bin/cmake -E cmake_autogen /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyQtProject"
+	/usr/bin/cmake -E cmake_autogen /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject_autogen.dir/AutogenInfo.json ""
 
 MyQtProject_autogen: CMakeFiles/MyQtProject_autogen
 MyQtProject_autogen: CMakeFiles/MyQtProject_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/MyQtProject_autogen.dir/clean:
 .PHONY : CMakeFiles/MyQtProject_autogen.dir/clean
 
 CMakeFiles/MyQtProject_autogen.dir/depend:
-	cd /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MyQtProject_autogen.dir/depend
 

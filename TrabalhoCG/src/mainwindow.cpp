@@ -8,6 +8,7 @@
 #include <QDebug>
 #include <QtGlobal>
 #include <cstdlib>
+#include <QRadioButton>
 
 #include <cmath>
 
@@ -22,9 +23,9 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 void MainWindow::initializeUI() {
+    
     canvas = QPixmap(600, 600);
     canvas.fill(Qt::white);
-    
     //criar botao X 
     botaoX = new QLabel(this);
     botaoX->setGeometry(620, 10, 160, 20);
@@ -51,7 +52,7 @@ void MainWindow::initializeUI() {
     int buttonWidth = 75;
     int buttonHeight = 30;
     int buttonSpacing = 10;
-
+  int buttonRow2Y = 400 + 2*(buttonHeight + buttonSpacing);  
     QPushButton *colorPickerButton = new QPushButton("Cor", this);
     colorPickerButton->setGeometry(620, 400, buttonWidth, buttonHeight);
     connect(colorPickerButton, &QPushButton::clicked, this, &MainWindow::openColorPicker);
@@ -70,14 +71,43 @@ void MainWindow::initializeUI() {
 
 
     QPushButton *pointButton = new QPushButton("Pontos", this);
-    pointButton->setGeometry(620 + 2*(buttonWidth + buttonSpacing), 400, buttonWidth, buttonHeight);
+    pointButton->setGeometry(620, buttonRow2Y, buttonWidth, buttonHeight);  // Mudei o y para buttonRow2Y
     connect(pointButton, &QPushButton::clicked, this, &MainWindow::fazerBotoes);
 
     drawLineButton = new QPushButton("Desenhar Reta", this);
-    drawLineButton->setGeometry(620 + 2*(buttonWidth + buttonSpacing), 400 + buttonHeight + buttonSpacing, buttonWidth, buttonHeight);
-    connect(drawLineButton, &QPushButton::clicked, this, &MainWindow::drawLine);
+    drawLineButton->setGeometry(620 + buttonWidth + buttonSpacing, buttonRow2Y, buttonWidth, buttonHeight);  // Mudei o y para buttonRow2Y
+    connect(drawLineButton, &QPushButton::clicked, this, &MainWindow::showAlgorithmDialog);  // Mudou para showAlgorithmDialog
     drawLineButton->hide();
 }
+
+void MainWindow::showAlgorithmDialog() {
+    QDialog dialog(this);
+    dialog.setWindowTitle("Escolher Algoritmo para Desenhar Linha");
+
+    QVBoxLayout layout;
+    dialog.setLayout(&layout);
+
+    QRadioButton bresenham("Bresenham");
+    QRadioButton dda("DDA");
+
+    layout.addWidget(&bresenham);
+    layout.addWidget(&dda);
+
+    QPushButton ok("Ok");
+    connect(&ok, &QPushButton::clicked, [&] {
+        if (bresenham.isChecked()) {
+            // Chame sua função para desenhar linha usando Bresenham
+        }
+        if (dda.isChecked()) {
+            drawLine();  // Seu método atual para desenhar linha
+        }
+        dialog.accept();
+    });
+
+    layout.addWidget(&ok);
+    dialog.exec();
+}
+
 
 void MainWindow::togglePointUI(bool show) {
    
@@ -137,7 +167,7 @@ void MainWindow::fazerBotoes() {
 void MainWindow::drawLine() {
     if (pointList.size() < 2) return;
 
-    // Use o DDA para conectar cada ponto da lista
+    
     for (int i = 0; i < pointList.size() - 1; i++) {
         fazerDDA(pointList[i].x(), pointList[i].y(), pointList[i + 1].x(), pointList[i + 1].y());
     }
@@ -145,17 +175,14 @@ void MainWindow::drawLine() {
     togglePointUI(false);
 }
 
-
-
-
-void MainWindow::fazerDDA(int Xinicio, int Xultimo, int Yinicio, int Y1ultimo){ 
+void MainWindow::fazerDDA(int x1, int y1, int x2, int y2) { 
     QPainter painter(&canvas);
     painter.setPen(QPen(currentColor, currentPenThickness));
 
-    int deltaX = Xultimo - Xinicio;
-    int deltaY = Y1ultimo - Yinicio;
-    float X = Xinicio;
-    float Y = Yinicio;
+    int deltaX = x2 - x1;
+    int deltaY = y2 - y1;
+    float X = x1;
+    float Y = y1;
 
     int quantidadeEtapas = abs(deltaX) > abs(deltaY) ? abs(deltaX) : abs(deltaY);
     float Xant = deltaX / (float)quantidadeEtapas;
@@ -163,13 +190,12 @@ void MainWindow::fazerDDA(int Xinicio, int Xultimo, int Yinicio, int Y1ultimo){
 
     for (int i = 0; i <= quantidadeEtapas; i++) {
         painter.drawPoint(std::round(X), std::round(Y)); 
-        X = X + Xant;
-        Y = Y + Yant;
+        X += Xant;
+        Y += Yant;
     }
 
     painter.end();
 }
-
 
 
 

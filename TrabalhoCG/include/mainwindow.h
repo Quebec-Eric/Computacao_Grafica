@@ -22,7 +22,7 @@ public:
 
     int getCurrentPenThickness() const;
     void setCurrentPenThickness(int thickness);
-
+    
     void clearCanvas();
 
 protected:
@@ -37,6 +37,7 @@ private slots:
     void openTransformDialog();
     void fazerRotacao();
     void fazerScala();
+    void showAlgorithmDialog();
     void fazertrannsf();
     void fazerRefle();
     void fazerBotoes();

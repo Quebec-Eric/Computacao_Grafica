@@ -1,4 +1,4 @@
-/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject.dir
-/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/edit_cache.dir
-/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/rebuild_cache.dir
-/home/quebec/Documents/faculdade/CG/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject_autogen.dir
+/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject.dir
+/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/edit_cache.dir
+/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/rebuild_cache.dir
+/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/build/CMakeFiles/MyQtProject_autogen.dir
