@@ -32,7 +32,7 @@ cd make || ./MyQtProject
 Desenvolvido com
 C++
 QT5
-
+cmake
 
 
 Eric Azevedo de Oliveira
