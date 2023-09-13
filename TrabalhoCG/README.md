@@ -16,6 +16,9 @@ Desenhar Reta: Botão "Desenhar Reta" para escolher o algoritmo para desenhar a 
 
 Posição do Mouse: Exibe as coordenadas atuais do mouse no canvas.
 
+Desenhar circuto : Botao desenhar reta e depois clicar em circulo.
+
+
 
 Requisitos
 C++11 ou superior

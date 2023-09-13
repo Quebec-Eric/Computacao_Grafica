@@ -24,6 +24,9 @@ public:
     void setCurrentPenThickness(int thickness);
     
     void clearCanvas();
+    QPoint rectTopLeft, rectBottomRight;
+    bool isDrawingRect = false;
+
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;
@@ -44,12 +47,14 @@ private slots:
     void drawCircle();
     void fazerCirculo(int xc, int yc, int r);
     void drawLine();
+    void fazerJanela();
     void drawLineRR();
     void fazerDDA(int x1, int y1, int x2, int y2);
     void fazerBres(int x1, int y1, int x2, int y2);
 private:
     QPixmap canvas;
     QColor currentColor;
+    QPushButton *fazerJanelaButton;
     int currentPenThickness;
     QList<QLabel*> pointXLabels;
     QList<QLabel*> pointYLabels;
@@ -62,7 +67,7 @@ private:
     int numberOfPointsToCreate;
     int pointsCreated;
     QVector<QPoint> pointList;
-
+    
     void initializeUI();  
     void togglePointUI(bool show); 
 };
