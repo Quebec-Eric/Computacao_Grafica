@@ -86,27 +86,8 @@ void MainWindow::initializeUI()
 }
 
 void MainWindow::fazerJanela()
-{
-    
-    
-      int canvasWidth = canvas.width();
-    int canvasHeight = canvas.height();
-
-    
-    QPoint rectTopLeft(canvasWidth / 6, canvasHeight / 4);  
-    QPoint rectBottomRight(5 * canvasWidth / 6, 3 * canvasHeight / 4); 
-
-    
-    QPainter painter(&canvas);
-
-    
-    painter.setPen(QPen(Qt::red, 2));
-
-    painter.drawRect(QRect(rectTopLeft, rectBottomRight));
-    painter.end();  
-    update();
-
-
+{   
+    coletarDados();
     QDialog dialogJanela(this);
     dialogJanela.setWindowTitle("Qual algoritmo de corte");
     QVBoxLayout layout;
@@ -121,18 +102,254 @@ void MainWindow::fazerJanela()
     connect(&ok, &QPushButton::clicked, [&]
             {
                 if (cohen.isChecked()) {
-                    
+                   cohenfazer(clippingRect); 
                 }
                 if (liang.isChecked()) {
-                    
+                   liangBarskyClipping(clippingRect); 
                 }
                 
-                dialogJanela.accept(); 
-            });
+                dialogJanela.accept(); });
 
     layout.addWidget(&ok);
     dialogJanela.exec();
+}
 
+QVector<QPoint> newPointList;
+
+const int INSIDE = 0; 
+const int LEFT = 1; 
+const int RIGHT = 2; 
+const int BOTTOM = 4;
+const int TOP = 8;    
+
+int computeOutCode(int x, int y, const QRect &rect)
+{
+    int code = INSIDE;
+
+    if (x < rect.left())
+        code |= LEFT;
+    else if (x > rect.right())
+        code |= RIGHT;
+    if (y < rect.top())
+        code |= TOP;
+    else if (y > rect.bottom())
+        code |= BOTTOM;
+
+    return code;
+}
+
+void MainWindow::fazer() {
+    QPainter painter(&canvas);
+    painter.setPen(QPen(Qt::red, 2));
+    painter.drawRect(clippingRect);
+    painter.end();
+    update();
+}
+
+
+void MainWindow::cohenfazer(const QRect &clippingRect)
+{
+    newPointList.clear();
+    clearCanvas();
+    fazer();
+    QPainter painter(&canvas);
+    painter.setPen(QPen(currentColor, currentPenThickness));
+
+    for (int i = 0; i < pointList.size() - 1; i++)
+    {
+        int x0 = pointList[i].x();
+        int y0 = pointList[i].y();
+        int x1 = pointList[i + 1].x();
+        int y1 = pointList[i + 1].y();
+
+        int outcode0 = computeOutCode(x0, y0, clippingRect);
+        int outcode1 = computeOutCode(x1, y1, clippingRect);
+
+        bool accept = false;
+
+        while (true)
+        {
+            if (!(outcode0 | outcode1))
+            {
+                accept = true;
+                break;
+            }
+            else if (outcode0 & outcode1)
+            {
+                break;
+            }
+            else
+            {
+                int x, y;
+                int outcodeOut = outcode0 ? outcode0 : outcode1;
+
+                if (outcodeOut & TOP)
+                {
+                    x = x0 + (x1 - x0) * (clippingRect.top() - y0) / (y1 - y0);
+                    y = clippingRect.top();
+                }
+                else if (outcodeOut & BOTTOM)
+                {
+                    x = x0 + (x1 - x0) * (clippingRect.bottom() - y0) / (y1 - y0);
+                    y = clippingRect.bottom();
+                }
+                else if (outcodeOut & RIGHT)
+                {
+                    y = y0 + (y1 - y0) * (clippingRect.right() - x0) / (x1 - x0);
+                    x = clippingRect.right();
+                }
+                else if (outcodeOut & LEFT)
+                {
+                    y = y0 + (y1 - y0) * (clippingRect.left() - x0) / (x1 - x0);
+                    x = clippingRect.left();
+                }
+
+                if (outcodeOut == outcode0)
+                {
+                    x0 = x;
+                    y0 = y;
+                    outcode0 = computeOutCode(x0, y0, clippingRect);
+                }
+                else
+                {
+                    x1 = x;
+                    y1 = y;
+                    outcode1 = computeOutCode(x1, y1, clippingRect);
+                }
+            }
+        }
+
+        if (accept) {
+            newPointList.append(QPoint(x0, y0));
+            newPointList.append(QPoint(x1, y1));
+            teste(painter, x0, y0, x1, y1);
+        }
+    }
+
+    
+    pointList = newPointList;
+    update();
+}
+
+bool clipTest(float p, float q, float &t1, float &t2) {
+    float r;
+    if (p < 0.0) {
+        r = q / p;
+        if (r > t2)
+            return false;
+        else if (r > t1)
+            t1 = r;
+    } else if (p > 0.0) {
+        r = q / p;
+        if (r < t1)
+            return false;
+        else if (r < t2)
+            t2 = r;
+    } else if (q < 0.0)
+        return false;
+
+    return true;
+}
+
+void MainWindow::liangBarskyClipping(const QRect &clippingRect)
+{
+    float x1, y1, x2, y2;
+    float xMin = clippingRect.left();
+    float xMax = clippingRect.right();
+    float yMin = clippingRect.top();
+    float yMax = clippingRect.bottom();
+
+    newPointList.clear();
+    clearCanvas();
+    fazer();
+    QPainter painter(&canvas);
+    painter.setPen(QPen(currentColor, currentPenThickness));
+
+    for (int i = 0; i < pointList.size() - 1; i++)
+    {
+        x1 = pointList[i].x();
+        y1 = pointList[i].y();
+        x2 = pointList[i + 1].x();
+        y2 = pointList[i + 1].y();
+
+        float dx = x2 - x1;
+        float dy = y2 - y1;
+        float t1 = 0.0;
+        float t2 = 1.0;
+
+        if (clipTest(-dx, x1 - xMin, t1, t2))
+            if (clipTest(dx, xMax - x1, t1, t2))
+                if (clipTest(-dy, y1 - yMin, t1, t2))
+                    if (clipTest(dy, yMax - y1, t1, t2))
+                    {
+                        if (t2 < 1.0)
+                        {
+                            x2 = x1 + t2 * dx;
+                            y2 = y1 + t2 * dy;
+                        }
+                        if (t1 > 0.0)
+                        {
+                            x1 += t1 * dx;
+                            y1 += t1 * dy;
+                        }
+
+                        newPointList.append(QPoint(x1, y1));
+                        newPointList.append(QPoint(x2, y2));
+                        teste(painter, x1, y1, x2, y2);
+                    }
+    }
+
+    pointList = newPointList;
+    update();
+}
+
+
+void MainWindow::coletarDados() {
+    bool ok;
+    
+   xMax = QInputDialog::getInt(this, "Entrada", "Digite o valor máximo para x:", 0, 0, 1000, 1, &ok);
+    
+    if (ok) {
+        yMax = QInputDialog::getInt(this, "Entrada", "Digite o valor máximo para y:", 0, 0, 1000, 1, &ok);
+        
+        if (ok) {
+           xMin = QInputDialog::getInt(this, "Entrada", "Digite o valor mínimo para x:", 0, 0, xMax, 1, &ok);
+            
+            if (ok) {
+               yMin = QInputDialog::getInt(this, "Entrada", "Digite o valor mínimo para y:", 0, 0, yMax, 1, &ok);
+                
+                if (ok) {
+                   clippingRect.setTopLeft(QPoint(xMin, yMin));
+                    clippingRect.setBottomRight(QPoint(xMax, yMax));
+                    
+                 
+                    fazer();
+                }
+            }
+        }
+    }
+}
+
+
+
+
+void MainWindow::teste(QPainter &painter, int x1, int y1, int x2, int y2)
+{
+    int deltaX = x2 - x1;
+    int deltaY = y2 - y1;
+    float X = x1;
+    float Y = y1;
+
+    int quantidadeEtapas = abs(deltaX) > abs(deltaY) ? abs(deltaX) : abs(deltaY);
+    float Xant = deltaX / (float)quantidadeEtapas;
+    float Yant = deltaY / (float)quantidadeEtapas;
+
+    for (int i = 0; i <= quantidadeEtapas; i++)
+    {
+        painter.drawPoint(std::round(X), std::round(Y));
+        X += Xant;
+        Y += Yant;
+    }
 }
 
 
@@ -449,7 +666,6 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
             if (pointsCreated == numberOfPointsToCreate)
             {
                 drawLineButton->show();
-                
             }
             update();
         }
@@ -465,7 +681,8 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
     QPainter painter(&canvas);
     painter.setPen(QPen(currentColor, currentPenThickness));
     painter.drawPoint(event->pos());
-    if (isDrawingRect) {
+    if (isDrawingRect)
+    {
         QPainter painter(&canvas);
         painter.setPen(Qt::DashLine); // Linha tracejada para a janela de recorte
         painter.drawRect(QRect(rectTopLeft, event->pos()));
