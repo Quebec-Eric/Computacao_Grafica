@@ -18,6 +18,7 @@ Posição do Mouse: Exibe as coordenadas atuais do mouse no canvas.
 
 Desenhar circuto : Botao desenhar reta e depois clicar em circulo.
 
+Fazer janela : clicar para fazer reta , depois ira aparcer um botao fazer janela , ai colocar os pontos Xmax Ymax , Ymim e Xmim e com isso aplicar qual algoritimo
 
 
 Requisitos
