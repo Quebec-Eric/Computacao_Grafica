@@ -251,6 +251,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
  /usr/include/qt/QtGui/QPainter /usr/include/qt/QtGui/qpainter.h \
  /usr/include/qt/QtGui/qtextoption.h /usr/include/qt/QtGui/qpen.h \
  /usr/include/qt/QtGui/QPixmap /usr/include/qt/QtGui/qpixmap.h \
+ /usr/include/qt/QtGui/QImage /usr/include/qt/QtGui/qimage.h \
  /usr/include/qt/QtWidgets/QPushButton \
  /usr/include/qt/QtWidgets/qpushbutton.h \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
@@ -283,6 +284,10 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: \
  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
+ /usr/include/c++/13.2.1/stack /usr/include/c++/13.2.1/deque \
+ /usr/include/c++/13.2.1/bits/stl_deque.h \
+ /usr/include/c++/13.2.1/bits/deque.tcc \
+ /usr/include/c++/13.2.1/bits/stl_stack.h \
  /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeColor.h \
  /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/../mainwindow.h \
  /home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/include/ModificacoesQuadro/changeThickness.h \

@@ -106,6 +106,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/deque.tcc \
   /usr/include/c++/13.2.1/bits/enable_special_members.h \
   /usr/include/c++/13.2.1/bits/erase_if.h \
   /usr/include/c++/13.2.1/bits/exception.h \
@@ -146,6 +147,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_deque.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
   /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
@@ -158,6 +160,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13.2.1/bits/stl_relops.h \
+  /usr/include/c++/13.2.1/bits/stl_stack.h \
   /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_tree.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
@@ -188,6 +191,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/deque \
   /usr/include/c++/13.2.1/exception \
   /usr/include/c++/13.2.1/ext/aligned_buffer.h \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
@@ -212,6 +216,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/ratio \
+  /usr/include/c++/13.2.1/stack \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -322,6 +327,7 @@ CMakeFiles/MyQtProject.dir/MyQtProject_autogen/mocs_compilation.cpp.o: MyQtProje
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QImage \
   /usr/include/qt/QtGui/QMouseEvent \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/QPixmap \
@@ -497,6 +503,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/deque.tcc \
   /usr/include/c++/13.2.1/bits/enable_special_members.h \
   /usr/include/c++/13.2.1/bits/erase_if.h \
   /usr/include/c++/13.2.1/bits/exception.h \
@@ -537,6 +544,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_deque.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
   /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
@@ -549,6 +557,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13.2.1/bits/stl_relops.h \
+  /usr/include/c++/13.2.1/bits/stl_stack.h \
   /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_tree.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
@@ -579,6 +588,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/deque \
   /usr/include/c++/13.2.1/exception \
   /usr/include/c++/13.2.1/ext/aligned_buffer.h \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
@@ -603,6 +613,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/ratio \
+  /usr/include/c++/13.2.1/stack \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -713,6 +724,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeColor.cpp.o: /home/quebe
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QImage \
   /usr/include/qt/QtGui/QMouseEvent \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/QPixmap \
@@ -889,6 +901,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/deque.tcc \
   /usr/include/c++/13.2.1/bits/enable_special_members.h \
   /usr/include/c++/13.2.1/bits/erase_if.h \
   /usr/include/c++/13.2.1/bits/exception.h \
@@ -929,6 +942,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_deque.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
   /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
@@ -941,6 +955,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13.2.1/bits/stl_relops.h \
+  /usr/include/c++/13.2.1/bits/stl_stack.h \
   /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_tree.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
@@ -971,6 +986,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/deque \
   /usr/include/c++/13.2.1/exception \
   /usr/include/c++/13.2.1/ext/aligned_buffer.h \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
@@ -995,6 +1011,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/ratio \
+  /usr/include/c++/13.2.1/stack \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -1105,6 +1122,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/changeThickness.cpp.o: /home/q
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QImage \
   /usr/include/qt/QtGui/QMouseEvent \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/QPixmap \
@@ -1279,6 +1297,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/deque.tcc \
   /usr/include/c++/13.2.1/bits/enable_special_members.h \
   /usr/include/c++/13.2.1/bits/erase_if.h \
   /usr/include/c++/13.2.1/bits/exception.h \
@@ -1319,6 +1338,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_deque.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
   /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
@@ -1331,6 +1351,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13.2.1/bits/stl_relops.h \
+  /usr/include/c++/13.2.1/bits/stl_stack.h \
   /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_tree.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
@@ -1361,6 +1382,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/deque \
   /usr/include/c++/13.2.1/exception \
   /usr/include/c++/13.2.1/ext/aligned_buffer.h \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
@@ -1385,6 +1407,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/ratio \
+  /usr/include/c++/13.2.1/stack \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -1495,6 +1518,7 @@ CMakeFiles/MyQtProject.dir/src/ModificacoesQuadro/clearCanvas.cpp.o: /home/quebe
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QImage \
   /usr/include/qt/QtGui/QMouseEvent \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/QPixmap \
@@ -2009,6 +2033,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documentos/facu/Grafica/
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/deque.tcc \
   /usr/include/c++/13.2.1/bits/enable_special_members.h \
   /usr/include/c++/13.2.1/bits/erase_if.h \
   /usr/include/c++/13.2.1/bits/exception.h \
@@ -2049,6 +2074,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documentos/facu/Grafica/
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_deque.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
   /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
@@ -2061,6 +2087,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documentos/facu/Grafica/
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13.2.1/bits/stl_relops.h \
+  /usr/include/c++/13.2.1/bits/stl_stack.h \
   /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_tree.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
@@ -2091,6 +2118,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documentos/facu/Grafica/
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/deque \
   /usr/include/c++/13.2.1/exception \
   /usr/include/c++/13.2.1/ext/aligned_buffer.h \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
@@ -2115,6 +2143,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documentos/facu/Grafica/
   /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/ratio \
+  /usr/include/c++/13.2.1/stack \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -2228,6 +2257,7 @@ CMakeFiles/MyQtProject.dir/src/main.cpp.o: /home/quebec/Documentos/facu/Grafica/
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QImage \
   /usr/include/qt/QtGui/QMouseEvent \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/QPixmap \
@@ -2409,6 +2439,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/deque.tcc \
   /usr/include/c++/13.2.1/bits/enable_special_members.h \
   /usr/include/c++/13.2.1/bits/erase_if.h \
   /usr/include/c++/13.2.1/bits/exception.h \
@@ -2449,6 +2480,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_deque.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
   /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
@@ -2461,6 +2493,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13.2.1/bits/stl_relops.h \
+  /usr/include/c++/13.2.1/bits/stl_stack.h \
   /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_tree.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
@@ -2491,6 +2524,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
   /usr/include/c++/13.2.1/cwchar \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/deque \
   /usr/include/c++/13.2.1/exception \
   /usr/include/c++/13.2.1/ext/aligned_buffer.h \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
@@ -2515,6 +2549,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
   /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/ratio \
+  /usr/include/c++/13.2.1/stack \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -2631,6 +2666,7 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QImage \
   /usr/include/qt/QtGui/QMouseEvent \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/QPixmap \
@@ -2875,8 +2911,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
 
 /usr/include/qt/QtCore/qmetatype.h:
 
-/usr/include/qt/QtCore/qmargins.h:
-
 /usr/include/qt/QtCore/qmap.h:
 
 /usr/include/qt/QtCore/qlogging.h:
@@ -2886,8 +2920,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
 /usr/include/qt/QtCore/qiterator.h:
 
 /usr/include/qt/QtCore/qiodevice.h:
-
-/usr/include/qt/QtCore/qhashfunctions.h:
 
 /usr/include/qt/QtCore/qglobalstatic.h:
 
@@ -2921,9 +2953,11 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
 
 /usr/include/pthread.h:
 
-/usr/include/qt/QtCore/qchar.h:
+/usr/include/locale.h:
 
-/usr/include/c++/13.2.1/bits/node_handle.h:
+/usr/include/linux/limits.h:
+
+/usr/include/limits.h:
 
 /usr/include/c++/13.2.1/bits/nested_exception.h:
 
@@ -3059,8 +3093,6 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
 
 /usr/include/bits/types/locale_t.h:
 
-/usr/include/c++/13.2.1/bits/allocator.h:
-
 /usr/include/qt/QtCore/qobject_impl.h:
 
 /usr/include/bits/errno.h:
@@ -3075,15 +3107,15 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
 
 /usr/include/c++/13.2.1/bits/stl_uninitialized.h:
 
-/usr/include/qt/QtWidgets/QApplication:
-
-/usr/include/c++/13.2.1/string_view:
-
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/qt/QtGui/qbrush.h:
 
 /usr/include/bits/libc-header-start.h:
+
+/usr/include/math.h:
+
+/usr/include/c++/13.2.1/atomic:
 
 /usr/include/qt/QtCore/qset.h:
 
@@ -3104,6 +3136,10 @@ CMakeFiles/MyQtProject.dir/src/mainwindow.cpp.o: /home/quebec/Documentos/facu/Gr
 /usr/include/bits/flt-eval-method.h:
 
 /usr/include/bits/types/FILE.h:
+
+/usr/include/c++/13.2.1/bits/allocator.h:
+
+/usr/include/c++/13.2.1/bits/deque.tcc:
 
 /usr/include/qt/QtGui/qtgui-config.h:
 
@@ -3215,6 +3251,12 @@ MyQtProject_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13.2.1/bits/vector.tcc:
 
+/usr/include/qt/QtWidgets/QApplication:
+
+/usr/include/c++/13.2.1/string_view:
+
+/usr/include/c++/13.2.1/stack:
+
 /usr/include/bits/struct_mutex.h:
 
 /usr/include/c++/13.2.1/ext/alloc_traits.h:
@@ -3285,6 +3327,10 @@ MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
 
 /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc:
 
+/usr/include/qt/QtCore/qchar.h:
+
+/usr/include/c++/13.2.1/bits/node_handle.h:
+
 /usr/include/c++/13.2.1/compare:
 
 /usr/include/bits/select.h:
@@ -3339,11 +3385,11 @@ MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
 
 /usr/include/c++/13.2.1/clocale:
 
-/usr/include/bits/sched.h:
-
 /usr/include/c++/13.2.1/bits/ios_base.h:
 
 /usr/include/features.h:
+
+/usr/include/bits/sched.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -3387,6 +3433,8 @@ MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
 
 /usr/include/c++/13.2.1/bits/std_function.h:
 
+/usr/include/c++/13.2.1/bits/stl_stack.h:
+
 /usr/include/c++/13.2.1/bits/stl_algo.h:
 
 /usr/include/qt/QtCore/qstringalgorithms.h:
@@ -3411,11 +3459,17 @@ MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
 
 /usr/include/c++/13.2.1/bits/stream_iterator.h:
 
+/usr/include/qt/QtCore/qmargins.h:
+
+/usr/include/c++/13.2.1/bits/stl_deque.h:
+
 /usr/include/c++/13.2.1/bits/stl_function.h:
 
 /usr/include/c++/13.2.1/bits/stl_heap.h:
 
 /usr/include/c++/13.2.1/bits/stl_map.h:
+
+/usr/include/qt/QtGui/QImage:
 
 /usr/include/c++/13.2.1/pstl/glue_memory_defs.h:
 
@@ -3444,6 +3498,10 @@ MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
 /usr/include/sys/types.h:
 
 /usr/include/c++/13.2.1/cwchar:
+
+/usr/include/qt/QtCore/qhashfunctions.h:
+
+/usr/include/c++/13.2.1/deque:
 
 /usr/include/c++/13.2.1/exception:
 
@@ -3540,13 +3598,3 @@ MyQtProject_autogen/6YEA5652QU/moc_mainwindow.cpp:
 /usr/include/endian.h:
 
 /usr/include/errno.h:
-
-/usr/include/limits.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/locale.h:
-
-/usr/include/c++/13.2.1/atomic:
-
-/usr/include/math.h:

@@ -5,10 +5,13 @@
 #include <QMouseEvent>
 #include <QPainter>
 #include <QPixmap>
+#include <QImage>
 #include <QPushButton>
+
 #include <QLabel>
 #include "TransformDialog.h"
 #include <cmath>
+#include <stack>
 
 class MainWindow : public QMainWindow
 {
@@ -29,9 +32,15 @@ public:
     bool isDrawingRect = false;
      QRect clippingRect; 
     int xMax,xMin;  
-    
+    void boundaryFill(QImage &image, int x, int y, QRgb fillColor, QRgb boundaryColor);
+    void executeFill();
+    void drawPolygon(QImage &image, int x, int y, int radius, QRgb boundaryColor);
     int yMax,yMin;
-   
+    void fazerJanelaColorir(QImage &image, int x, int y, QRgb fillColor, QRgb boundaryColor);
+    void floodFill4(QImage &image,int x, int y, QRgb fillColor, QRgb oldColor);
+   QImage image;
+    void floodFill8(QImage &image, int x, int y, QRgb fillColor, QRgb oldColor);
+    void boundaryFill8(QImage &image, int x, int y, QRgb fillColor, QRgb boundaryColor);
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;

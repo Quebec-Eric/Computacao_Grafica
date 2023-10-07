@@ -20,6 +20,8 @@ Desenhar circuto : Botao desenhar reta e depois clicar em circulo.
 
 Fazer janela : clicar para fazer reta , depois ira aparcer um botao fazer janela , ai colocar os pontos Xmax Ymax , Ymim e Xmim e com isso aplicar qual algoritimo
 
+fazer Preenchimento: ire clicar em pontos e escolher 3 pontos , onde os 2 primeiros serao baseados no raio do circulo e o terceiro o local inicial do prenenchimento , depois so clicar nop botao colorir e com isso escolher os algoritimos de preenchimento e preencher.
+
 
 Requisitos
 C++11 ou superior

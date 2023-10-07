@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/quebec/Documentos/facu/Grafica/Computacao_Grafica/TrabalhoCG/CMakeLists.txt"
-  "CMakeFiles/3.27.4/CMakeCCompiler.cmake"
-  "CMakeFiles/3.27.4/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.27.4/CMakeSystem.cmake"
+  "CMakeFiles/3.27.5/CMakeCCompiler.cmake"
+  "CMakeFiles/3.27.5/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.27.5/CMakeSystem.cmake"
   "/usr/lib/cmake/Qt5/Qt5Config.cmake"
   "/usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake"
   "/usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake"

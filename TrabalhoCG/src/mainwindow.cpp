@@ -9,7 +9,12 @@
 #include <QtGlobal>
 #include <cstdlib>
 #include <QRadioButton>
+#include <stack>
 #include <cmath>
+
+QRgb boundaryColor = qRgb(0, 0, 0);
+
+QRgb boundaryColorRRR = qRgb(250, 0, 0);
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), currentColor(Qt::black), currentPenThickness(5)
@@ -19,7 +24,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     initializeUI();
 }
-
+int xCoord = 285;
+int yCoord = 311;
 void MainWindow::initializeUI()
 {
 
@@ -69,24 +75,202 @@ void MainWindow::initializeUI()
     connect(graphButton, &QPushButton::clicked, this, &MainWindow::openTransformDialog);
 
     QPushButton *pointButton = new QPushButton("Pontos", this);
-    pointButton->setGeometry(620, buttonRow2Y, buttonWidth, buttonHeight); // Mudei o y para buttonRow2Y
+    pointButton->setGeometry(620, buttonRow2Y, buttonWidth, buttonHeight); 
     connect(pointButton, &QPushButton::clicked, this, &MainWindow::fazerBotoes);
 
     drawLineButton = new QPushButton("Desenhar Reta", this);
-    drawLineButton->setGeometry(620 + buttonWidth + buttonSpacing, buttonRow2Y, buttonWidth, buttonHeight); // Mudei o y para buttonRow2Y
-    connect(drawLineButton, &QPushButton::clicked, this, &MainWindow::showAlgorithmDialog);                 // Mudou para showAlgorithmDialog
+    drawLineButton->setGeometry(620 + buttonWidth + buttonSpacing, buttonRow2Y, buttonWidth, buttonHeight); 
+    connect(drawLineButton, &QPushButton::clicked, this, &MainWindow::showAlgorithmDialog);                 
     drawLineButton->hide();
 
     int buttonRow3Y = buttonRow2Y + buttonHeight + buttonSpacing;
 
     fazerJanelaButton = new QPushButton("Fazer Janela", this);
-    fazerJanelaButton->setGeometry(620, buttonRow3Y, buttonWidth, buttonHeight);       // Definir posição e tamanho
-    connect(fazerJanelaButton, &QPushButton::clicked, this, &MainWindow::fazerJanela); // Conectar com o slot fazerJanela
+    fazerJanelaButton->setGeometry(620, buttonRow3Y, buttonWidth, buttonHeight);       
+    connect(fazerJanelaButton, &QPushButton::clicked, this, &MainWindow::fazerJanela); 
     fazerJanelaButton->hide();
+
+    int buttonRow4Y = buttonRow2Y + buttonHeight + buttonSpacing;
+
+    QPushButton *fillButton = new QPushButton("Colorir", this);
+    fillButton->setGeometry(620, buttonRow4Y, buttonWidth, buttonHeight);
+    connect(fillButton, &QPushButton::clicked, this, &MainWindow::executeFill);
+    image = QImage(width(), height(), QImage::Format_ARGB32);
 }
 
+//inicio preenchiomento
+void MainWindow::executeFill()
+{
+    if (image.isNull())
+    {
+        qDebug() << "Image is null";
+        return;
+    }   
+    
+    QPoint center = pointList[0];
+    QPoint edgePoint = pointList[1];
+ int radius = std::sqrt(std::pow(center.x() - edgePoint.x(), 2) + std::pow(center.y() - edgePoint.y(), 2));
+
+    drawPolygon(image, center.x(), center.y(), radius, boundaryColor);
+    
+    QPoint fillPoint = center;
+    pointList.append(fillPoint);
+    fazerJanelaColorir(image, fillPoint.x(), fillPoint.y(),  boundaryColorRRR , boundaryColor);
+
+    canvas = QPixmap::fromImage(image);
+    update();
+}
+
+
+void MainWindow::drawPolygon(QImage &image, int x, int y, int radius, QRgb boundaryColor)
+{
+    QPainter painter(&image);
+    painter.setPen(QColor(boundaryColor));
+    painter.drawEllipse(QPoint(x, y), radius, radius);
+}
+
+
+void MainWindow::boundaryFill(QImage &image, int x, int y, QRgb fillColor, QRgb boundaryColor)
+{
+    
+    if (x >= image.width() || y >= image.height())
+    {
+        return;
+    }
+
+    QRgb currentColor = image.pixel(x, y);
+
+    if (currentColor != boundaryColor && currentColor != fillColor)
+    {
+        image.setPixel(x, y, fillColor);
+        qDebug() << "clorinddddooo" << x << "," << y;
+
+        boundaryFill(image, x + 1, y, fillColor, boundaryColor);
+        boundaryFill(image, x - 1, y, fillColor, boundaryColor);
+        boundaryFill(image, x, y + 1, fillColor, boundaryColor);
+        boundaryFill(image, x, y - 1, fillColor, boundaryColor);
+
+    }
+    
+}
+
+void MainWindow::boundaryFill8(QImage &image, int x, int y, QRgb fillColor, QRgb boundaryColor)
+{
+    if (x < 0 || x >= image.width() || y < 0 || y >= image.height())
+    {
+        return;
+    }
+
+    QRgb currentColor = image.pixel(x, y);
+
+    if (currentColor != boundaryColor && currentColor != fillColor)
+    {
+        qDebug() << "clorinddddooo" << x << "," << y;
+        image.setPixel(x, y, fillColor);
+
+        boundaryFill8(image, x + 1, y, fillColor, boundaryColor);
+        boundaryFill8(image, x - 1, y, fillColor, boundaryColor);
+        boundaryFill8(image, x, y + 1, fillColor, boundaryColor);
+        boundaryFill8(image, x, y - 1, fillColor, boundaryColor);
+        boundaryFill8(image, x + 1, y + 1, fillColor, boundaryColor);
+        boundaryFill8(image, x + 1, y - 1, fillColor, boundaryColor);
+        boundaryFill8(image, x - 1, y + 1, fillColor, boundaryColor);
+        boundaryFill8(image, x - 1, y - 1, fillColor, boundaryColor);
+    }
+}
+void MainWindow::floodFill4(QImage &image, int x, int y, QRgb fillColor, QRgb oldColor)
+{
+    
+    if (x < 0 || x >= image.width() || y < 0 || y >= image.height())
+    {
+        return;
+    }
+    QRgb currentColor = image.pixel(x, y);
+       if (currentColor == oldColor)
+    {
+        qDebug() << "colorinooooo" << x << "," << y;
+        image.setPixel(x, y, fillColor);
+
+        
+        floodFill4(image, x + 1, y, fillColor, oldColor);
+        floodFill4(image, x - 1, y, fillColor, oldColor);
+        floodFill4(image, x, y + 1, fillColor, oldColor);
+        floodFill4(image, x, y - 1, fillColor, oldColor);
+    }
+}
+void MainWindow::floodFill8(QImage &image, int x, int y, QRgb fillColor, QRgb oldColor)
+{
+    if (x < 0 || x >= image.width() || y < 0 || y >= image.height())
+    {
+        return;
+    }
+
+    QRgb currentColor = image.pixel(x, y);
+    if (currentColor == oldColor)
+    {
+        qDebug() << "colorinooooo" << x << "," << y;
+        image.setPixel(x, y, fillColor);
+
+        floodFill8(image, x + 1, y, fillColor, oldColor);
+        floodFill8(image, x - 1, y, fillColor, oldColor);
+        floodFill8(image, x, y + 1, fillColor, oldColor);
+        floodFill8(image, x, y - 1, fillColor, oldColor);
+        floodFill8(image, x + 1, y + 1, fillColor, oldColor);
+        floodFill8(image, x + 1, y - 1, fillColor, oldColor);
+        floodFill8(image, x - 1, y + 1, fillColor, oldColor);
+        floodFill8(image, x - 1, y - 1, fillColor, oldColor);
+    }
+}
+
+
+void MainWindow::fazerJanelaColorir(QImage &image, int x, int y, QRgb fillColor, QRgb boundaryColor){
+    QDialog dialogJanela(this);
+    dialogJanela.setWindowTitle("Qual algoritimo para colorir");
+    QVBoxLayout layout;
+    dialogJanela.setLayout(&layout);
+    QRadioButton boundary4("boundary4");
+    QRadioButton boundary8("boundary8");
+    QRadioButton Flood4("Flood4");
+    QRadioButton Flood8("Flood8");
+    QRadioButton FazerCirculo("FazerCirculo");
+    layout.addWidget(& boundary4);
+    layout.addWidget(&boundary8);
+    layout.addWidget(&Flood4);
+    layout.addWidget(&Flood8);
+    layout.addWidget(&FazerCirculo);
+     QPushButton ok("Ok");
+    connect(&ok, &QPushButton::clicked, [&]
+            {
+                if (boundary4.isChecked()) {
+                    boundaryFill(image,x,y,fillColor,boundaryColor);
+                }
+                if (boundary8.isChecked()) {
+                    boundaryFill8(image,x,y,fillColor,boundaryColor);
+                }
+                if(Flood4.isChecked()){
+                      QRgb oldColor = 0;
+                     QRgb fillColor = qRgb(255, 0, 0);
+                    floodFill4(image, x, y, fillColor, oldColor);
+                }
+                if(Flood8.isChecked()){
+                      QRgb oldColor = 0;
+                     QRgb fillColor = qRgb(255, 0, 0);
+                    floodFill8(image, x, y, fillColor, oldColor);
+                }
+                
+                dialogJanela.accept(); });
+
+    layout.addWidget(&ok);
+    dialogJanela.exec();
+
+}
+
+
+//fim preenchimento
+
+
 void MainWindow::fazerJanela()
-{   
+{
     coletarDados();
     QDialog dialogJanela(this);
     dialogJanela.setWindowTitle("Qual algoritmo de corte");
@@ -116,11 +300,11 @@ void MainWindow::fazerJanela()
 
 QVector<QPoint> newPointList;
 
-const int INSIDE = 0; 
-const int LEFT = 1; 
-const int RIGHT = 2; 
+const int INSIDE = 0;
+const int LEFT = 1;
+const int RIGHT = 2;
 const int BOTTOM = 4;
-const int TOP = 8;    
+const int TOP = 8;
 
 int computeOutCode(int x, int y, const QRect &rect)
 {
@@ -138,14 +322,14 @@ int computeOutCode(int x, int y, const QRect &rect)
     return code;
 }
 
-void MainWindow::fazer() {
+void MainWindow::fazer()
+{
     QPainter painter(&canvas);
     painter.setPen(QPen(Qt::red, 2));
     painter.drawRect(clippingRect);
     painter.end();
     update();
 }
-
 
 void MainWindow::cohenfazer(const QRect &clippingRect)
 {
@@ -219,33 +403,38 @@ void MainWindow::cohenfazer(const QRect &clippingRect)
             }
         }
 
-        if (accept) {
+        if (accept)
+        {
             newPointList.append(QPoint(x0, y0));
             newPointList.append(QPoint(x1, y1));
             teste(painter, x0, y0, x1, y1);
         }
     }
 
-    
     pointList = newPointList;
     update();
 }
 
-bool clipTest(float p, float q, float &t1, float &t2) {
+bool clipTest(float p, float q, float &t1, float &t2)
+{
     float r;
-    if (p < 0.0) {
+    if (p < 0.0)
+    {
         r = q / p;
         if (r > t2)
             return false;
         else if (r > t1)
             t1 = r;
-    } else if (p > 0.0) {
+    }
+    else if (p > 0.0)
+    {
         r = q / p;
         if (r < t1)
             return false;
         else if (r < t2)
             t2 = r;
-    } else if (q < 0.0)
+    }
+    else if (q < 0.0)
         return false;
 
     return true;
@@ -303,35 +492,35 @@ void MainWindow::liangBarskyClipping(const QRect &clippingRect)
     update();
 }
 
-
-void MainWindow::coletarDados() {
+void MainWindow::coletarDados()
+{
     bool ok;
-    
-   xMax = QInputDialog::getInt(this, "Entrada", "Digite o valor máximo para x:", 0, 0, 1000, 1, &ok);
-    
-    if (ok) {
+
+    xMax = QInputDialog::getInt(this, "Entrada", "Digite o valor máximo para x:", 0, 0, 1000, 1, &ok);
+
+    if (ok)
+    {
         yMax = QInputDialog::getInt(this, "Entrada", "Digite o valor máximo para y:", 0, 0, 1000, 1, &ok);
-        
-        if (ok) {
-           xMin = QInputDialog::getInt(this, "Entrada", "Digite o valor mínimo para x:", 0, 0, xMax, 1, &ok);
-            
-            if (ok) {
-               yMin = QInputDialog::getInt(this, "Entrada", "Digite o valor mínimo para y:", 0, 0, yMax, 1, &ok);
-                
-                if (ok) {
-                   clippingRect.setTopLeft(QPoint(xMin, yMin));
+
+        if (ok)
+        {
+            xMin = QInputDialog::getInt(this, "Entrada", "Digite o valor mínimo para x:", 0, 0, xMax, 1, &ok);
+
+            if (ok)
+            {
+                yMin = QInputDialog::getInt(this, "Entrada", "Digite o valor mínimo para y:", 0, 0, yMax, 1, &ok);
+
+                if (ok)
+                {
+                    clippingRect.setTopLeft(QPoint(xMin, yMin));
                     clippingRect.setBottomRight(QPoint(xMax, yMax));
-                    
-                 
+
                     fazer();
                 }
             }
         }
     }
 }
-
-
-
 
 void MainWindow::teste(QPainter &painter, int x1, int y1, int x2, int y2)
 {
@@ -351,8 +540,6 @@ void MainWindow::teste(QPainter &painter, int x1, int y1, int x2, int y2)
         Y += Yant;
     }
 }
-
-
 
 void MainWindow::showAlgorithmDialog()
 {
@@ -489,7 +676,8 @@ void MainWindow::drawCircle()
 void MainWindow::fazerDDA(int x1, int y1, int x2, int y2)
 {
     QPainter painter(&canvas);
-    painter.setPen(QPen(currentColor, currentPenThickness));
+    QColor qColor = QColor::fromRgb(boundaryColor);
+    painter.setPen(QPen(qColor, currentPenThickness));
 
     int deltaX = x2 - x1;
     int deltaY = y2 - y1;
@@ -593,7 +781,8 @@ void MainWindow::fazerBres(int x1, int y1, int x2, int y2)
 void MainWindow::fazerCirculo(int xc, int yc, int r)
 {
     QPainter painter(&canvas);
-    painter.setPen(QPen(currentColor, currentPenThickness));
+    QColor qColor = QColor::fromRgb(boundaryColor);
+    painter.setPen(QPen(qColor, currentPenThickness));
 
     auto draw_circle = [&](int x, int y)
     {
@@ -642,7 +831,7 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
         {
             rectBottomRight = event->pos();
             isDrawingRect = false;
-            // Agora você pode habilitar o botão ou o menu para escolher o algoritmo
+           
         }
     }
     else
@@ -656,8 +845,6 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
             QLabel *yLabel = pointYLabels[pointsCreated - 1];
             xLabel->setText("X" + QString::number(pointsCreated) + ": " + QString::number(event->pos().x()));
             yLabel->setText("Y" + QString::number(pointsCreated) + ": " + QString::number(event->pos().y()));
-
-            // Define a posição e mostra o label
             xLabel->setGeometry(620, 70 + (pointsCreated - 1) * 30, 80, 20);
             yLabel->setGeometry(700, 70 + (pointsCreated - 1) * 30, 80, 20);
             xLabel->show();
@@ -684,7 +871,7 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
     if (isDrawingRect)
     {
         QPainter painter(&canvas);
-        painter.setPen(Qt::DashLine); // Linha tracejada para a janela de recorte
+        painter.setPen(Qt::DashLine); 
         painter.drawRect(QRect(rectTopLeft, event->pos()));
     }
     update();
